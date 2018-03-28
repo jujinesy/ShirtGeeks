@@ -2,7 +2,7 @@
 <html lang=en>
 
 <head>
-<title>{% block head_title %}MuyPicky.com{% endblock head_title %}</title>
+<title>{% block head_title %}Shirt Geeks{% endblock head_title %}</title>
 {% include 'snippets/css.html' %}
 </head>
 <body>
@@ -20,7 +20,9 @@
 {% block content %}{% endblock content %}
 </div>
 
-
+<div class='container'>
+{% include 'snippets/footer.html' %}
+</div>
 {% include 'snippets/js.html' %}
 </body>
 </html>

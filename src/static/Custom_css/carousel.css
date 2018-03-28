@@ -12,6 +12,34 @@ body {
 -------------------------------------------------- */
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
+/*.navbar-inverse {*/
+  /*background-color: #FFFFFF;*/
+  /*border-color : #FFFFFF;*/
+/*}*/
+
+.navbar-inverse {
+  /*border-color : #4bf7ff; !*네비바 전체 보더*!*/
+  /*background-color : #fcfaff;*/
+  /*background-image: linear-gradient(to bottom,#bb0c0c 0,#211515 100%);*/
+}
+
+.navbar-inverse .navbar-brand {
+  /*background-color: #a7b1ff; !* 네비바 제목 백그라운드 *!*/
+  /*color: #04ff00; !* 네비바 제목 글시 색갈*!*/
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus{
+  /*background-color: brown; !*마우스 올렸을때 백그라운드*!*/
+  /*border-color : #4033ff; !**!*/
+  /*color : #fff900; !*마우스 올렸을때 글자색깔*!*/
+}
+
+.navbar-inverse .navbar-nav {
+  /*background-color: #a7b1ff; !* 네비바 속성 백그라운드 *!*/
+  /*color: #04ff00; !* 네비바 속성 글시 색갈*!*/
+}
+
 .navbar-wrapper {
   position: absolute;
   top: 0;
@@ -75,7 +103,7 @@ body {
 /* Declare heights because of positioning of img element */
 .basecarousel .item {
   height: 100px;
-  background-color: #777;
+  background-color: #00000;
 }
 .basecarousel-inner > .item > img {
   position: absolute;
