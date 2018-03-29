@@ -20,25 +20,24 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'j2b_z(*4w+#)t^nz3)0nq(tcj&3##klo73m76(x7%3z)b%85n!'
+SECRET_KEY = os.environ.get('SECRET_KEY', 'j2b_z(*4w+#)t^nz3)0n3da(tcj&3##klo73m76(x7%3z)b%85n!')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'youremail@gmail.com' 
-EMAIL_HOST_PASSWORD = 'yourpassword'
+EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'Your Name <you@email.com>'
 
 ADMINS = (
-    ('You', 'you@email.com'),
+    ('Admin', EMAIL_HOST_USER),
 )
 MANAGERS = ADMINS
-
 
 # Application definition
 
@@ -49,8 +48,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    # 'compile_static'
 
     'menus',
     'profiles',
@@ -87,7 +84,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'ShirtGeeks.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
@@ -143,7 +139,7 @@ STATICFILES_DIRS = [
     #'/var/www/static/',
 ]
 
-LOGOUT_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/login'
 LOGIN_REDIRECT_URL = '/'
 
 CORS_REPLACE_HTTPS_REFERER      = False
@@ -157,8 +153,8 @@ SECURE_HSTS_INCLUDE_SUBDOMAINS  = False
 SECURE_FRAME_DENY               = False
 
 
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static_cdn')
 
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static_cdn')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'media_cdn')

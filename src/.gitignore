@@ -1,6 +1,6 @@
-muypicky/settings/local.py
-muypicky/settings/local2.py
-db.sqlite3
+#muypicky/settings/local.py
+#muypicky/settings/local2.py
+#db.sqlite3
 
 .py[cod]
 
