@@ -1,3 +1,5 @@
+local = True
+
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
