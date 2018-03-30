@@ -137,12 +137,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-STATIC_URL = '/static/'
-
+STATIC_URL = '/static/'   #주소창에보이는 스태틱주소
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR+"/Static/", "Static_Local"),
     #'/var/www/static/',
 ]
+STATIC_ROOT = os.path.join(BASE_DIR+"/Static/", 'Static_Server')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR+"/Media/", 'Media_Server')
 
 LOGOUT_REDIRECT_URL = '/login'
 LOGIN_REDIRECT_URL = '/'
@@ -159,7 +162,3 @@ SECURE_FRAME_DENY               = False
 
 
 
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static_cdn')
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'media_cdn')

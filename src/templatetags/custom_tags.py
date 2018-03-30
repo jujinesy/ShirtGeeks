@@ -25,7 +25,7 @@ def do_assign(parser, token):
 # Your template:
 # {% load custom_tags %}
 #
-# # Set local template variable:
+# # Set Static_Local template variable:
 # {% get_settings_value settings_debug "DEBUG" %}
 #
 # # Output settings_debug variable:

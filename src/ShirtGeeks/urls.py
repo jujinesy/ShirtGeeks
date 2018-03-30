@@ -1,3 +1,4 @@
+import django
 from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls import url, include
@@ -24,7 +25,13 @@ urlpatterns = [
     url(r'^restaurants/', include('restaurants.urls', namespace='restaurants')),
     url(r'^about/$', TemplateView.as_view(template_name='about.html'), name='about'),
     url(r'^contact/$', TemplateView.as_view(template_name='contact.html'), name='contact'),
+
+# DEBUG FALSE에서 정적파일 쓰고싶으면 python manage.py runserver --insecure
+# 또는 아래 처럼
+
+    url(r'^static/(?P<path>.*)$', django.views.static.serve, {'document_root':settings.STATIC_ROOT}),
 ]
 
-urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
