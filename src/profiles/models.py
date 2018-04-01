@@ -40,7 +40,7 @@ class Profile(models.Model):
             self.save()
             #path_ = reverse()
             path_ = reverse('activate', kwargs={"code": self.activation_key})
-            full_path = "https://ShirtGeeks.com" + path_
+            full_path = "https://conf.com" + path_
             subject = 'Activate Account'
             from_email = settings.DEFAULT_FROM_EMAIL
             message = f'Activate your account here: {full_path}'

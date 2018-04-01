@@ -1,0 +1,30 @@
+upstream django {
+	server unix:/home/ubuntu/ShirtGeeks/runfile/uwsgi.sock;
+}
+
+server {
+    listen 80;
+    server_name 34.218.81.143;
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+
+    #charset	utf-8;
+
+    # max upload size
+    client_max_body_size 75M;   # adjust to taste
+
+    # Django media
+    location /media  {
+        alias /home/ubuntu/ShirtGeeks/src/Media;
+    }
+
+    location /static {
+        alias /home/ubuntu/ShirtGeeks/src/Static/Static_Server;
+    }
+
+    location / {
+        include		/etc/nginx/uwsgi_params;
+        uwsgi_pass	django;
+    }
+}
+
