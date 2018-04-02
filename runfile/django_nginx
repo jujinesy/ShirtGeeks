@@ -4,7 +4,7 @@ upstream django {
 
 server {
     listen 80;
-    server_name 52.15.153.105;
+    server_name 18.221.254.166;
 
     location = /favicon.ico { access_log off; log_not_found off; }
 
@@ -27,4 +27,3 @@ server {
         uwsgi_pass	django;
     }
 }
-

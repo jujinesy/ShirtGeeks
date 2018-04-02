@@ -1,4 +1,4 @@
-local = True
+LOCAL = True
 
 DEBUG = True
 
