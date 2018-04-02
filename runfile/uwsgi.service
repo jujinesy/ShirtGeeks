@@ -5,7 +5,7 @@ Description=uWSGI Emperor service
 ExecStart=/home/ubuntu/venv/bin/uwsgi \
         --emperor /home/ubuntu/ShirtGeeks/runfile
 User=ubuntu
-Group=www-data
+Group=ubuntu
 Restart=on-failure
 KillSignal=SIGQUIT
 Type=notify

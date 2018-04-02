@@ -4,7 +4,7 @@ upstream django {
 
 server {
     listen 80;
-    server_name 34.218.81.143;
+    server_name 52.15.153.105;
 
     location = /favicon.ico { access_log off; log_not_found off; }
 
