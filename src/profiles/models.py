@@ -5,6 +5,7 @@ from django.core.mail import send_mail
 from django.core.urlresolvers import reverse
 from .utils import code_generator
 
+import requests
 
 User = settings.AUTH_USER_MODEL
 
@@ -24,7 +25,8 @@ class Profile(models.Model):
     user              = models.OneToOneField(User) # user.profile
     followers         = models.ManyToManyField(User, related_name='is_following', blank=True) # user.is_following.all()
     #following         = models.ManyToManyField(User, related_name='following', blank=True) # user.following.all()
-    activation_key    = models.CharField(max_length=120, blank=True, null=True)
+    activation_key = models.CharField(max_length=120, blank=True, null=True)
+    activated_key = models.CharField(max_length=120, blank=True, null=True)
     activated         = models.BooleanField(default=False)
     timestamp         = models.DateTimeField(auto_now_add=True)
     updated           = models.DateTimeField(auto_now=True)
@@ -40,20 +42,23 @@ class Profile(models.Model):
             self.save()
             #path_ = reverse()
             path_ = reverse('activate', kwargs={"code": self.activation_key})
-            full_path = "https://conf.com" + path_
+            full_path = settings.HOSTS_NAME + path_
             subject = 'Activate Account'
             from_email = settings.DEFAULT_FROM_EMAIL
             message = f'Activate your account here: {full_path}'
             recipient_list = [self.user.email]
             html_message = f'<p>Activate your account here: {full_path}</p>'
             print(html_message)
-            sent_mail = send_mail(
-                            subject, 
-                            message, 
-                            from_email, 
-                            recipient_list, 
-                            fail_silently=False, 
-                            html_message=html_message)
+            if settings.AUTO_CONFIRM:
+                requests.get(full_path)
+            else:
+                sent_mail = send_mail(
+                                subject,
+                                message,
+                                from_email,
+                                recipient_list,
+                                fail_silently=False,
+                                html_message=html_message)
             sent_mail = False
             return sent_mail
 
