@@ -1,5 +1,6 @@
 {% load custom_tags %}
 {% get_settings_value settings_local "LOCAL" %}
+{% get_settings_value GOOGLE_ANALYTICS "GOOGLE_ANALYTICS" %}
 
 <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
 <!-- Latest compiled and minified JavaScript -->
@@ -7,12 +8,12 @@
 
 {% if settings_local == False %}
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116547483-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ GOOGLE_ANALYTICS }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-116547483-1');
+  gtag('config', '{{ GOOGLE_ANALYTICS }}');
 </script>
 {% endif %}

@@ -30,7 +30,6 @@ DEBUG = False
 ALLOWED_HOSTS = []
 
 AUTO_CONFIRM = False
-HOSTS_NAME = 'https://sh3ltr.com'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = os.environ.get("houstontxheb")
 EMAIL_HOST_PASSWORD = os.environ.get('11q11q11q')
