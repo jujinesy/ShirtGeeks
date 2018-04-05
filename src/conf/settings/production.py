@@ -6,6 +6,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 HOSTS_NAME = 'https://sh3ltr.com'
 ALLOWED_HOSTS = ['*']
 GOOGLE_ANALYTICS = 'UA-116547483-1'
+GOOGLE_ADSENSE = ' '
 
 DATABASES = {
     'default': {
