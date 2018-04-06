@@ -44,20 +44,20 @@ server {
 		# First attempt to serve request as file, then
 		# as directory, then fall back to displaying a 404.
 		try_files $uri $uri/ = 404;
-        return 404;
+		return 404;
 	}
 
-    error_page 404 /custom_404.html;
-    location = /custom_404.html {
-        root /home/ubuntu/ShirtGeeks/runfile/page;
-        internal;
+	error_page 404 /custom_404.html;
+	location = /custom_404.html {
+		root /home/ubuntu/ShirtGeeks/runfile/page;
+		internal;
     }
 
-    error_page 500 502 503 504 /custom_50x.html;
-    location = /custom_50x.html {
-        root /home/ubuntu/ShirtGeeks/runfile/page;
-        internal;
-    }
+	error_page 500 502 503 504 /custom_50x.html;
+	location = /custom_50x.html {
+		root /home/ubuntu/ShirtGeeks/runfile/page;
+		internal;
+	}
 
 	# pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
 	#

@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5d1630cc-ae4d-40e5-817c-d6a8876a7597" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/runfile/default" afterPath="$PROJECT_DIR$/runfile/default" />
+      <change beforePath="$PROJECT_DIR$/runfile/django_nginx_https_test" afterPath="$PROJECT_DIR$/runfile/django_nginx_https_test" />
+      <change beforePath="$PROJECT_DIR$/runfile/page/custom_404.html" afterPath="$PROJECT_DIR$/runfile/page/custom_404.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,8 +49,8 @@
       <file leaf-file-name="django_nginx_https_test" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/runfile/django_nginx_https_test">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="66" column="5" lean-forward="false" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+            <state relative-caret-position="478">
+              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -56,8 +59,8 @@
       <file leaf-file-name="default" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/runfile/default">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="59" selection-end-column="5" />
+            <state relative-caret-position="181">
+              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="59" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -67,8 +70,10 @@
         <entry file="file://$PROJECT_DIR$/runfile/page/custom_404.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="55" lean-forward="true" selection-start-line="0" selection-start-column="55" selection-end-line="0" selection-end-column="55" />
-              <folding />
+              <caret line="0" column="51" lean-forward="false" selection-start-line="0" selection-start-column="51" selection-end-line="0" selection-end-column="51" />
+              <folding>
+                <element signature="n#style#0;n#h1#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,9 +150,9 @@
         <option value="$PROJECT_DIR$/src/templates/snippets/js.html" />
         <option value="$PROJECT_DIR$/src/conf/settings/production_test.py" />
         <option value="$PROJECT_DIR$/src/conf/settings/production.py" />
-        <option value="$PROJECT_DIR$/runfile/page/custom_404.html" />
         <option value="$PROJECT_DIR$/runfile/page/custom_50x.html" />
         <option value="$PROJECT_DIR$/runfile/default" />
+        <option value="$PROJECT_DIR$/runfile/page/custom_404.html" />
         <option value="$PROJECT_DIR$/runfile/django_nginx_https_test" />
       </list>
     </option>
@@ -344,7 +349,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522978382640</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=".">
+      <created>1522978432379</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1522978432379</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -539,14 +551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/runfile/page/custom_404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="55" lean-forward="true" selection-start-line="0" selection-start-column="55" selection-end-line="0" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/runfile/page/custom_50x.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -555,10 +559,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/runfile/page/custom_404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="51" lean-forward="false" selection-start-line="0" selection-start-column="51" selection-end-line="0" selection-end-column="51" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/runfile/default">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="59" selection-end-column="5" />
+        <state relative-caret-position="181">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="59" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -573,8 +587,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/runfile/django_nginx_https_test">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="66" column="5" lean-forward="false" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+        <state relative-caret-position="478">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding />
         </state>
       </provider>
