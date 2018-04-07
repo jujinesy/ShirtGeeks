@@ -11,18 +11,37 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+import json
 
-LOCAL = False
+from django.core.exceptions import ImproperlyConfigured
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+secret_file = os.path.join(os.path.dirname(BASE_DIR)+"/runfile", 'secret.json')
 
+with open(secret_file, 'r') as f:
+    secret = json.loads(f.read())
+
+def get_secret(setting, secret=secret):
+    """
+    :param setting: secret Dict 의 원하는 value 값을 가져올 수 있게하는 key 값
+    :param secret: 비밀 변수들의 실제 값을 담은 json 파일을 Dict화 한 변수
+    :return secret[setting]: secret.json 에서 가져온 Dict 의 setting 키를 가진 값을 리턴해줍니다.
+    """
+    try:
+        return secret[setting]
+    except KeyError:
+        error_msg = "Set the {0} environment variable".format(setting)
+        raise ImproperlyConfigured(error_msg)
+
+LOCAL = False
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY', 'j2b_z(*4w+#)t^nz3)0n3da(tcj&3##klo73m76(x7%3z)b%85n!')
+SECRET_KEY = get_secret('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -34,8 +53,10 @@ AUTO_CONFIRM = False
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+# EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+# EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+EMAIL_HOST_USER = get_secret("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = get_secret("EMAIL_HOST_PASSWORD")
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 DEFAULT_TO_EMAIL = EMAIL_HOST_USER
 
