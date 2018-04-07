@@ -30,12 +30,23 @@ DEBUG = False
 ALLOWED_HOSTS = []
 
 AUTO_CONFIRM = False
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = os.environ.get("houstontxheb")
-EMAIL_HOST_PASSWORD = os.environ.get('11q11q11q')
-EMAIL_PORT = 587
+
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'houstontxheb@email.com'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+DEFAULT_TO_EMAIL = EMAIL_HOST_USER
+
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_USE_TLS = True
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = 'aaaa@gmail.com'
+# EMAIL_HOST_PASSWORD = 'aaaa'
+# DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+# DEFAULT_TO_EMAIL = EMAIL_HOST_USER
 
 ADMINS = (
     ('Admin', EMAIL_HOST_USER),

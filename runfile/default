@@ -51,7 +51,7 @@ server {
 	location = /custom_404.html {
 		root /home/ubuntu/ShirtGeeks/runfile/page;
 		internal;
-    }
+	}
 
 	error_page 500 502 503 504 /custom_50x.html;
 	location = /custom_50x.html {
