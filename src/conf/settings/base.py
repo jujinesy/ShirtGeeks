@@ -14,6 +14,7 @@ import os
 import json
 
 from django.core.exceptions import ImproperlyConfigured
+from django.utils.translation import gettext_lazy as _
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -46,6 +47,8 @@ SECRET_KEY = get_secret('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+SITE_ID = 1
+
 ALLOWED_HOSTS = []
 
 AUTO_CONFIRM = False
@@ -77,12 +80,57 @@ MANAGERS = ADMINS
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
+    # External apps that need to go before django's
+    # 'storages',
+
+    # Django modules
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sitemaps',
+    'django.contrib.sites',
     'django.contrib.staticfiles',
+    'django.contrib.auth',
+    'django.contrib.postgres',
+    'django.forms',
+
+    # Local apps
+    # 'saleor.account',
+    # 'saleor.discount',
+    # 'saleor.product',
+    # 'saleor.cart',
+    # 'saleor.checkout',
+    'conf.core',
+    # 'saleor.graphql',
+    # 'saleor.menu',
+    # 'saleor.order.OrderAppConfig',
+    # 'saleor.dashboard',
+    # 'saleor.seo',
+    # 'saleor.shipping',
+    # 'saleor.search',
+    'conf.site',
+    # 'saleor.data_feeds',
+    # 'saleor.page',
+
+    # External apps
+    # 'versatileimagefield',
+    # 'django_babel',
+    # 'bootstrap4',
+    # 'django_prices',
+    # 'django_prices_openexchangerates',
+    # 'graphene_django',
+    # 'mptt',
+    # 'payments',
+    'webpack_loader',
+    # 'social_django',
+    # 'django_countries',
+    # 'django_filters',
+    # 'django_celery_results',
+    # 'impersonate',
+    # 'phonenumber_field'
+
+
+    'django.contrib.admin',
 
     'menus',
     'profiles',
@@ -97,23 +145,48 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    'django.middleware.locale.LocaleMiddleware',
 ]
 
 ROOT_URLCONF = 'conf.urls'
 LOGIN_URL = '/login/'
 
+context_processors = [
+    'django.template.context_processors.debug',
+    'django.template.context_processors.request',
+    'django.contrib.auth.context_processors.auth',
+    'django.contrib.messages.context_processors.messages',
+
+    'django.template.context_processors.i18n',
+    'django.template.context_processors.media',
+    'django.template.context_processors.static',
+    'django.template.context_processors.tz',
+    # 'saleor.core.context_processors.default_currency',
+    # 'saleor.cart.context_processors.cart_counter',
+    # 'saleor.core.context_processors.navigation',
+    # 'saleor.core.context_processors.search_enabled',
+    'conf.site.context_processors.site',
+    # 'social_django.context_processors.backends',
+    # 'social_django.context_processors.login_redirect',
+]
+
+loaders = [
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader']
+
+if not DEBUG:
+    loaders = [('django.template.loaders.cached.Loader', loaders)]
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')], 
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-            ],
+            'debug': DEBUG,
+            'context_processors': context_processors,
+            # 'loaders': loaders,
             'libraries': {
                 'custom_tags': 'templatetags.custom_tags',
             }
@@ -155,17 +228,36 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
+PROJECT_ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), '../..'))
 
-LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
-
+TIME_ZONE = 'America/Chicago'
+LANGUAGE_CODE = 'en'
+LANGUAGES = [
+    ('bg', _('Bulgarian')),
+    ('de', _('German')),
+    ('en', _('English')),
+    ('es', _('Spanish')),
+    ('fa-ir', _('Persian (Iran)')),
+    ('fr', _('French')),
+    ('hu', _('Hungarian')),
+    ('it', _('Italian')),
+    ('ja', _('Japanese')),
+    ('ko', _('Korean')),
+    ('nb', _('Norwegian')),
+    ('nl', _('Dutch')),
+    ('pl', _('Polish')),
+    ('pt-br', _('Portuguese (Brazil)')),
+    ('ro', _('Romanian')),
+    ('ru', _('Russian')),
+    ('sk', _('Slovak')),
+    ('tr', _('Turkish')),
+    ('uk', _('Ukrainian')),
+    ('vi', _('Vietnamese')),
+    ('zh-hans', _('Chinese'))]
+LOCALE_PATHS = [os.path.join(PROJECT_ROOT, 'locale')]
 USE_I18N = True
-
 USE_L10N = True
-
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
