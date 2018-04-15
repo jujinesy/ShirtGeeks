@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d1630cc-ae4d-40e5-817c-d6a8876a7597" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/conf/core/templatetags/urls.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/templates/_language_picker.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/templates/favicon.html" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/60a7c875-1421-4cf0-b08e-a74cdacf55d4.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/60a7c875-1421-4cf0-b08e-a74cdacf55d4.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/conf/settings/base.py" afterPath="$PROJECT_DIR$/src/conf/settings/base.py" />
-      <change beforePath="$PROJECT_DIR$/src/conf/urls.py" afterPath="$PROJECT_DIR$/src/conf/urls.py" />
-      <change beforePath="$PROJECT_DIR$/src/db.sqlite3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/menus/templates/menus/detail-update.html" afterPath="$PROJECT_DIR$/src/templates/menus/detail-update.html" />
-      <change beforePath="$PROJECT_DIR$/src/menus/templates/menus/home-feed.html" afterPath="$PROJECT_DIR$/src/templates/menus/home-feed.html" />
-      <change beforePath="$PROJECT_DIR$/src/menus/templates/menus/item_detail.html" afterPath="$PROJECT_DIR$/src/templates/menus/item_detail.html" />
-      <change beforePath="$PROJECT_DIR$/src/menus/templates/menus/item_list.html" afterPath="$PROJECT_DIR$/src/templates/menus/item_list.html" />
-      <change beforePath="$PROJECT_DIR$/src/menus/views.py" afterPath="$PROJECT_DIR$/src/menus/views.py" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/templates/profiles/snippet/follow_form.html" afterPath="$PROJECT_DIR$/src/templates/profiles/snippet/follow_form.html" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/templates/profiles/user.html" afterPath="$PROJECT_DIR$/src/templates/profiles/user.html" />
-      <change beforePath="$PROJECT_DIR$/src/requirements.txt" afterPath="$PROJECT_DIR$/src/requirements.txt" />
-      <change beforePath="$PROJECT_DIR$/src/templates/base.html" afterPath="$PROJECT_DIR$/src/templates/base.html" />
-      <change beforePath="$PROJECT_DIR$/src/templates/home.html" afterPath="$PROJECT_DIR$/src/templates/home.html" />
-      <change beforePath="$PROJECT_DIR$/src/templatetags/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/templatetags/custom_tags.py" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -387,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523126654104</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary=".">
+      <created>1523807686285</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1523807686285</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -610,6 +598,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -792,6 +781,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="91" lean-forward="false" selection-start-line="6" selection-start-column="91" selection-end-line="6" selection-end-column="91" />
+          <folding />
         </state>
       </provider>
     </entry>
