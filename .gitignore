@@ -108,3 +108,13 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# data
+#/docs/_build/
+/src/media/
+/src/node_modules/
+#/static/
+/src/Static/Static_Local/assets/
+webpack-bundle.json
+package-lock.json
+/src/templates/templated_email/compiled/

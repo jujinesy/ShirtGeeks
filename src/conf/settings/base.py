@@ -18,6 +18,8 @@ from django.utils.translation import gettext_lazy as _
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+PROJECT_ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), '..'))
+print (BASE_DIR)
 
 secret_file = os.path.join(os.path.dirname(BASE_DIR)+"/runfile", 'secret.json')
 
@@ -136,6 +138,16 @@ INSTALLED_APPS = [
     'profiles',
     'restaurants',
 ]
+
+WEBPACK_LOADER = {
+    'DEFAULT': {
+        'CACHE': not DEBUG,
+        'BUNDLE_DIR_NAME': 'assets/',
+        'STATS_FILE': os.path.join(BASE_DIR, 'webpack-bundle.json'),
+        'POLL_INTERVAL': 0.1,
+        'IGNORE': [
+            r'.+\.hot-update\.js',
+            r'.+\.map']}}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
