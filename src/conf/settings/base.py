@@ -46,7 +46,12 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'j2b_z(*4w+#)t^nz3)0n3da(tcj&3##klo73m
 SECRET_KEY = get_secret('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+try:
+    from .local import *
+except:
+    DEBUG = False
+    pass
+print('DEBUG : {}'.format(DEBUG))
 
 SITE_ID = 1
 

@@ -23,6 +23,8 @@ non_translatable_urlpatterns = [
     ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 translatable_urlpatterns = [
+    url(r'^jsi18n/$', JavaScriptCatalog.as_view(), name='javascript-catalog'),
+
     url(r'^$', HomeView.as_view(), name='home'),
     url(r'^recent/$', AllUserRecentItemListView.as_view(), name='recent'),
     url(r'^register/$', RegisterView.as_view(), name='register'),

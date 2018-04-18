@@ -2,89 +2,143 @@
 {% load i18n %}
 
 {% block content %}
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-            <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-            <div class="item">
-                <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Example headline.</h1>
-                        <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-                    </div>
-                </div>
+  <div class="home">
+    <div class="row">
+      <div class="col-sm-12 home__block1">
+        <div class="home--square">
+          <div class="home--content">
+            <div class="home--content-wrapper">
+              <div class="home--content-inner">
+                <h1>{% trans "Promo &amp; Sale" context "Homepage title" %}</h1>
+                <h2>{% trans "from the Northpole" context "Homepage title" %}</h2>
+                  <a class="btn btn-secondary home__button" href="#">
+                    {% trans "Shop now" context "Homepage action" %}
+                  </a>
+              </div>
             </div>
-            <div class="item active left">
-                <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="item next left">
-                <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>One more for good measure.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+      </div>
     </div>
-    {% if not request.user.is_authenticated %}
-        <div class='row'>
-            <div class='col-sm-6 col-sm-offset-3 text-center'>
-                <p class='lead'>
-                    Share your pickiness with your friends. Add the restaurants add menu items like most so they get it right every time.<br/>
-
-                    <a href='{% url "register" %}'>Join us</a>
-                </p>
-                <hr/>
+    <div class="row">
+      <div class="col-sm-12 col-md-6 home__block2">
+        <div class="home--square">
+          <div class="home--content">
+            <div class="home--content-wrapper">
+              <div class="home--content-inner">
+                <h1>{% trans "Size &amp; Colours" context "Homepage title" %}</h1>
+                <a class="btn btn-secondary home__button" href="#">{% trans "Shop now" context "Homepage action" %}</a>
+              </div>
             </div>
-
+          </div>
         </div>
-    {% endif %}
-    <div class='row'>
-        <div class='col-sm-6 col-sm-offset-3'>
-            <h3>Recent Items</h3>
-            {% for obj in object_list %}
-
-
-                <div class='thumbnail'>
-                    <h3><a href='{% url "profiles:detail" username=obj.user.username %}'>{{ obj.user.username }}</a></h3>
-                    <h4>{{ obj.name }}</h4>
-                    <p><a href='{% url "profiles:detail" username=obj.user.username %}?q={{ obj.restaurant.title }}'>{{ obj.restaurant.title }}</a>| <a href='{% url "profiles:detail" username=obj.user.username %}?q={{ obj.restaurant.location }}'>{{ obj.restaurant.location }}</a> | <a href='{% url "profiles:detail" username=obj.user.username %}?q={{ obj.restaurant.category }}'>{{ obj.restaurant.category }}</a></p>
-                    <p>
-                        <b>{{ obj.name }}:</b> with
-                        {% for ing in obj.get_contents %}
-                            <a href='{% url "profiles:detail" username=obj.user.username %}?q={{ ing}}'>{{ ing}}</a>
-                        {% endfor %}
-                    </p>
-                </div>
-
-
-
-            {% endfor %}
-
+      </div>
+      <div class="col-sm-12 col-md-6 home__block3">
+        <div class="home--square">
+          <div class="home--content">
+            <div class="home--content-wrapper">
+              <div class="home--content-inner">
+                <h1>{% trans "Digital Downloads" context "Homepage title" %}</h1>
+                <a class="btn btn-secondary home__button" href="#">{% trans "Shop now" context "Homepage action" %}</a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+    <div class="home__featured">
+      <h2 class="text-center">{% trans "Featured products" context "Homepage title" %}</h2>
+      <div class="row">
+{#        {% include "product/_items.html" %}#}
+      </div>
+    </div>
+    <script type="application/ld+json">{{ webpage_schema|safe }}</script>
+  </div>
+{#    <div id="myCarousel" class="carousel slide" data-ride="carousel">#}
+{#        <!-- Indicators -->#}
+{#        <ol class="carousel-indicators">#}
+{#            <li data-target="#myCarousel" data-slide-to="0" class=""></li>#}
+{#            <li data-target="#myCarousel" data-slide-to="1" class=""></li>#}
+{#            <li data-target="#myCarousel" data-slide-to="2" class="active"></li>#}
+{#        </ol>#}
+{#        <div class="carousel-inner" role="listbox">#}
+{#            <div class="item">#}
+{#                <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">#}
+{#                <div class="container">#}
+{#                    <div class="carousel-caption">#}
+{#                        <h1>Example headline.</h1>#}
+{#                        <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>#}
+{#                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="item active left">#}
+{#                <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">#}
+{#                <div class="container">#}
+{#                    <div class="carousel-caption">#}
+{#                        <h1>Another example headline.</h1>#}
+{#                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>#}
+{#                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="item next left">#}
+{#                <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">#}
+{#                <div class="container">#}
+{#                    <div class="carousel-caption">#}
+{#                        <h1>One more for good measure.</h1>#}
+{#                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>#}
+{#                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">#}
+{#            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>#}
+{#            <span class="sr-only">Previous</span>#}
+{#        </a>#}
+{#        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">#}
+{#            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>#}
+{#            <span class="sr-only">Next</span>#}
+{#        </a>#}
+{#    </div>#}
+
+
+{#    {% if not request.user.is_authenticated %}#}
+{#        <div class='row'>#}
+{#            <div class='col-sm-6 col-sm-offset-3 text-center'>#}
+{#                <p class='lead'>#}
+{#                    Share your pickiness with your friends. Add the restaurants add menu items like most so they get it right every time.<br/>#}
+{##}
+{#                    <a href='{% url "register" %}'>Join us</a>#}
+{#                </p>#}
+{#                <hr/>#}
+{#            </div>#}
+{##}
+{#        </div>#}
+{#    {% endif %}#}
+{#    <div class='row'>#}
+{#        <div class='col-sm-6 col-sm-offset-3'>#}
+{#            <h3>Recent Items</h3>#}
+{#            {% for obj in object_list %}#}
+{##}
+{##}
+{#                <div class='thumbnail'>#}
+{#                    <h3><a href='{% url "profiles:detail" username=obj.user.username %}'>{{ obj.user.username }}</a></h3>#}
+{#                    <h4>{{ obj.name }}</h4>#}
+{#                    <p><a href='{% url "profiles:detail" username=obj.user.username %}?q={{ obj.restaurant.title }}'>{{ obj.restaurant.title }}</a>| <a href='{% url "profiles:detail" username=obj.user.username %}?q={{ obj.restaurant.location }}'>{{ obj.restaurant.location }}</a> | <a href='{% url "profiles:detail" username=obj.user.username %}?q={{ obj.restaurant.category }}'>{{ obj.restaurant.category }}</a></p>#}
+{#                    <p>#}
+{#                        <b>{{ obj.name }}:</b> with#}
+{#                        {% for ing in obj.get_contents %}#}
+{#                            <a href='{% url "profiles:detail" username=obj.user.username %}?q={{ ing}}'>{{ ing}}</a>#}
+{#                        {% endfor %}#}
+{#                    </p>#}
+{#                </div>#}
+{##}
+{##}
+{##}
+{#            {% endfor %}#}
+{##}
+{#        </div>#}
+{#    </div>#}
 {% endblock content %}

@@ -6,7 +6,7 @@
 {#{% load placeholder %}#}
 {% load translate_url from urls %}
 
-<html lang="{{ LANGUAGE_CODE }}" class="no-js" data-shipping-options-url="" data-cart-summary-url="">
+<html lang="{{ LANGUAGE_CODE }}" class="no-js" data-shipping-options-url="" data-cart-summary-url="/a">
 {#<html lang="{{ LANGUAGE_CODE }}" class="no-js" data-shipping-options-url="{% url 'cart:shipping-options' %}" data-cart-summary-url="{% url 'cart:cart-summary' %}">#}
 <head>
   <title>{% block title %}{{ site.name }}{% endblock %}</title>
@@ -90,12 +90,12 @@
               {% endif %}
             {% else %}
               <li>
-{#                <a rel="nofollow" href="{% url "account:signup" %}">#}
-{#                  {% trans "Register" context "Main navigation item" %}</a>#}
+                <a rel="nofollow" href="{% url "register" %}">
+                  {% trans "Register" context "Main navigation item" %}</a>
               </li>
               <li>
-{#                <a rel="nofollow" href="{% url "account:login" %}">#}
-{#                  {% trans "Log in" context "Main navigation item" %}#}
+                <a rel="nofollow" href="{% url "login" %}">
+                  {% trans "Log in" context "Main navigation item" %}
                 </a>
               </li>
             {% endif %}
@@ -167,29 +167,141 @@
     </div>
   </header>
 {% endblock header %}
-
-
-
-
-
-{% include 'snippets/nav.html' %}
-{% if messages %}
-<div class="alert messages text-center">
+<div class="container maincontent">
+  {% block topcontent %}{% endblock topcontent %}
+  {% if messages %}
     {% for message in messages %}
-    <b>{{ message }}</b><br/>
+      <div class="alert{% if message.tags %} alert-{{ message.tags }}{% endif %}">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        {{ message }}
+      </div>
     {% endfor %}
-
+  {% endif %}
+  {% block breadcrumb %}
+  {% endblock breadcrumb %}
+  {% block content %}
+  {% endblock content %}
 </div>
-{% endif %}
+{% block footer %}
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <a href="{% url 'home' %}" class="footer__logo">
+            <svg data-src="{% static "images/logo.svg" %}" height="38px" width="176px"/>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+{#          {% menu 'footer' %}#}
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <ul>
+            <li>
+{#              <a rel="nofollow" href="{% url "cart:index" %}">#}
+{#                {% trans "Your Cart" context "Main navigation item" %}#}
+{#              </a>#}
+            </li>
+            {% if user.is_authenticated %}
+              {% if user.is_staff %}
+                <li>
+{#                  <a href="{% url "dashboard:index" %}" target="_blank" rel="noopener">#}
+{#                    {% trans "Dashboard" context "Main navigation item" %}#}
+{#                  </a>#}
+                </li>
+                <li>
+{#                  <a href="{% url "styleguide" %}" target="_blank">#}
+{#                    {% trans "Style guide" context "Main navigation item" %}#}
+{#                  </a>#}
+                </li>
+              {% endif %}
+              <li>
+{#                <a href="{% url "account:details" %}">#}
+{#                  {% trans "Your account" context "Main navigation item" %}#}
+{#                </a>#}
+              </li>
+              {% if user.is_impersonate %}
+                <li>
+{#                  <a href="{% url "impersonate-stop" %}">#}
+{#                    {% trans 'Stop impersonating' context 'Main navigation item' %}#}
+{#                  </a>#}
+                </li>
+              {% else %}
+                <li>
+                  <a href="{% url "logout" %}">
+                    {% trans "Log out" context "Main navigation item" %}</a>
+                </li>
+              {% endif %}
+            {% else %}
+              <li>
+                <a rel="nofollow" href="{% url "register" %}">
+                  {% trans "Register" context "Main navigation item" %}
+                </a>
+              </li>
+              <li>
+                <a rel="nofollow" href="{% url "login" %}">
+                  {% trans "Log in" context "Main navigation item" %}
+                </a>
+              </li>
+            {% endif %}
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <a target="_blank" rel="noopener" class="social-footer" href="https://www.facebook.com/shirtgeeks/">
+            <svg data-src="{% static "images/facebook-logo.svg" %}" width="45px" height="45px"/>
+          </a>
+          <a target="_blank" rel="noopener" class="social-footer" href="https://github.com/shirtgeeks">
+            <svg data-src="{% static "images/github-logo.svg" %}" width="45px" height="45px"/>
+          </a>
+          <a target="_blank" rel="noopener" class="social-footer" href="https://twitter.com/shirtgeeks">
+            <svg data-src="{% static "images/twitter-logo.svg" %}" width="45px" height="45px"/>
+          </a>
+          <a target="_blank" rel="noopener" class="social-footer" href="https://plus.google.com/shirtgeeks">
+            <svg data-src="{% static "images/google-logo.svg" %}" width="45px" height="45px"/>
+          </a>
+          <a target="_blank" rel="noopener" class="social-footer" href="https://www.meetup.com/shirtgeeks/">
+            <svg data-src="{% static "images/meetup-logo.svg" %}" width="45px" height="45px"/>
+          </a>
+          <a target="_blank" rel="noopener" class="social-footer" href="https://linkedin.com/company/shirtgeeks">
+            <svg data-src="{% static "images/linkedin-logo.svg" %}" width="45px" height="45px"/>
+          </a>
+          <a target="_blank" rel="noopener" class="social-footer" href="https://dribbble.com/mirumee">
+            <svg data-src="{% static "images/dribbble-logo.svg" %}" width="45px" height="45px"/>
+          </a>
+          <a target="_blank" rel="noopener" class="social-footer" href="https://www.instagram.com/explore/tags/shirtgeeks/">
+            <svg data-src="{% static "images/instagram-logo.svg" %}" width="45px" height="45px"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+{% endblock %}
+{% block footer_scripts %}
+  <script type="text/javascript" src="{% url 'javascript-catalog' %}"></script>
+  {% render_bundle 'storefront' 'js' %}
+{% endblock footer_scripts %}
+{#</body>#}
+{#</html>#}
 
-<div class='container'>
-{% block content %}{% endblock content %}
-</div>
 
-<div class='container'>
-{% include 'snippets/footer.html' %}
-</div>
-{% include 'snippets/js.html' %}
+
+{#{% include 'snippets/nav.html' %}#}
+{#{% if messages %}#}
+{#<div class="alert messages text-center">#}
+{#    {% for message in messages %}#}
+{#    <b>{{ message }}</b><br/>#}
+{#    {% endfor %}#}
+{##}
+{#</div>#}
+{#{% endif %}#}
+{##}
+{#<div class='container'>#}
+{#{% block content %}{% endblock content %}#}
+{#</div>#}
+{##}
+{#<div class='container'>#}
+{#{% include 'snippets/footer.html' %}#}
+{#</div>#}
+{#{% include 'snippets/js.html' %}#}
 </body>
 </html>
 
