@@ -15,7 +15,7 @@ if (process.env.NODE_ENV === 'production') {
     path: resolve('Static/Static_Local/assets/'),
     filename: '[name].[chunkhash].js',
     chunkFilename: '[name].[chunkhash].js',
-    publicPath: process.env.STATIC_URL || '/static/assets/'
+    publicPath: process.env.STATIC_URL || '/Static/assets/'
   };
   fileLoaderPath = 'file-loader?name=[name].[hash].[ext]';
   extractCssPlugin = new MiniCssExtractPlugin({
@@ -24,10 +24,10 @@ if (process.env.NODE_ENV === 'production') {
   });
 } else {
   output = {
-    path: resolve('static/Static_Local/assets/'),
+    path: resolve('Static/Static_Local/assets/'),
     filename: '[name].js',
     chunkFilename: '[name].js',
-    publicPath: '/static/assets/'
+    publicPath: '/Static/assets/'
   };
   fileLoaderPath = 'file-loader?name=[name].[ext]';
   extractCssPlugin = new MiniCssExtractPlugin({
