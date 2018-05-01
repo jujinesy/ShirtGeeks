@@ -120,16 +120,16 @@ INSTALLED_APPS = [
 
     # External apps
     # 'versatileimagefield',
-    # 'django_babel',
+    'django_babel',
     # 'bootstrap4',
     # 'django_prices',
-    # 'django_prices_openexchangerates',
+    'django_prices_openexchangerates',
     # 'graphene_django',
     # 'mptt',
     # 'payments',
     'webpack_loader',
     # 'social_django',
-    # 'django_countries',
+    'django_countries',
     # 'django_filters',
     # 'django_celery_results',
     # 'impersonate',
@@ -163,6 +163,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
     'django.middleware.locale.LocaleMiddleware',
+    'django_babel.middleware.LocaleMiddleware',
 ]
 
 ROOT_URLCONF = 'conf.urls'
@@ -303,3 +304,10 @@ SECURE_FRAME_DENY               = False
 
 
 
+DEFAULT_COUNTRY = 'US'
+DEFAULT_CURRENCY = 'USD'
+AVAILABLE_CURRENCIES = [DEFAULT_CURRENCY]
+
+ENABLE_SSL = False
+
+ENABLE_SEARCH = False

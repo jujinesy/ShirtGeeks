@@ -3,6 +3,7 @@ from django.shortcuts import render
 from django.views.generic import View, ListView, DetailView, CreateView, UpdateView
 from django.template.response import TemplateResponse
 
+from conf.seo.schema.webpage import get_webpage_schema
 
 from .forms import ItemForm
 from .models import Item
@@ -12,12 +13,12 @@ class HomeView(View):
         # products = products_for_homepage()[:8]
         # products = products_with_availability(
         #     products, discounts=request.discounts, local_currency=request.currency)
-        # webpage_schema = get_webpage_schema(request)
+        webpage_schema = get_webpage_schema(request)
         return TemplateResponse(
             request, 'home.html', {
                 'parent': None,
                 'products': '11',
-                'webpage_schema': '22'})
+                'webpage_schema': webpage_schema})
 
 
         # if not request.user.is_authenticated():
