@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 21:01-0500\n"
+"POT-Creation-Date: 2018-05-01 23:54-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Sadeq Sardari <sadeq.sardari@gmail.com>, 2018\n"
 "Language-Team: Persian (Iran) (https://www.transifex.com/mirumee/teams/34782/"
@@ -19,87 +19,87 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: conf/settings/base.py:252
+#: conf/settings/base.py:253
 msgid "Bulgarian"
 msgstr ""
 
-#: conf/settings/base.py:253
+#: conf/settings/base.py:254
 msgid "German"
 msgstr ""
 
-#: conf/settings/base.py:254
+#: conf/settings/base.py:255
 msgid "English"
 msgstr ""
 
-#: conf/settings/base.py:255
+#: conf/settings/base.py:256
 msgid "Spanish"
 msgstr ""
 
-#: conf/settings/base.py:256
+#: conf/settings/base.py:257
 msgid "Persian (Iran)"
 msgstr ""
 
-#: conf/settings/base.py:257
+#: conf/settings/base.py:258
 msgid "French"
 msgstr ""
 
-#: conf/settings/base.py:258
+#: conf/settings/base.py:259
 msgid "Hungarian"
 msgstr ""
 
-#: conf/settings/base.py:259
+#: conf/settings/base.py:260
 msgid "Italian"
 msgstr ""
 
-#: conf/settings/base.py:260
+#: conf/settings/base.py:261
 msgid "Japanese"
 msgstr ""
 
-#: conf/settings/base.py:261
+#: conf/settings/base.py:262
 msgid "Korean"
 msgstr ""
 
-#: conf/settings/base.py:262
+#: conf/settings/base.py:263
 msgid "Norwegian"
 msgstr ""
 
-#: conf/settings/base.py:263
+#: conf/settings/base.py:264
 msgid "Dutch"
 msgstr ""
 
-#: conf/settings/base.py:264
+#: conf/settings/base.py:265
 msgid "Polish"
 msgstr ""
 
-#: conf/settings/base.py:265
+#: conf/settings/base.py:266
 msgid "Portuguese (Brazil)"
 msgstr ""
 
-#: conf/settings/base.py:266
+#: conf/settings/base.py:267
 msgid "Romanian"
 msgstr ""
 
-#: conf/settings/base.py:267
+#: conf/settings/base.py:268
 msgid "Russian"
 msgstr ""
 
-#: conf/settings/base.py:268
+#: conf/settings/base.py:269
 msgid "Slovak"
 msgstr ""
 
-#: conf/settings/base.py:269
+#: conf/settings/base.py:270
 msgid "Turkish"
 msgstr ""
 
-#: conf/settings/base.py:270
+#: conf/settings/base.py:271
 msgid "Ukrainian"
 msgstr ""
 
-#: conf/settings/base.py:271
+#: conf/settings/base.py:272
 msgid "Vietnamese"
 msgstr ""
 
-#: conf/settings/base.py:272
+#: conf/settings/base.py:273
 msgid "Chinese"
 msgstr ""
 
