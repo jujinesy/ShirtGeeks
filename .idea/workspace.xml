@@ -3,30 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5d1630cc-ae4d-40e5-817c-d6a8876a7597" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/db.sqlite3" afterPath="$PROJECT_DIR$/src/db.sqlite3" />
-      <change beforePath="$PROJECT_DIR$/src/locale/bg/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/bg/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/bg_BG/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/bg_BG/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/de/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/de/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/en/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/en/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/es/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/es/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/fa_IR/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/fa_IR/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/fr/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/fr/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/hu/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/hu/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/it/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/it/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/ja/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/ja/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/ko/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/ko/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/nb/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/nb/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/nl/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/nl/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/pl/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/pl/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/pt_BR/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/pt_BR/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/ro/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/ro/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/ru/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/ru/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/sk/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/sk/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/tr/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/tr/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/uk/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/uk/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/vi/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/vi/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/zh/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/zh/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/package.json" afterPath="$PROJECT_DIR$/src/package.json" />
       <change beforePath="$PROJECT_DIR$/src/requirements.txt" afterPath="$PROJECT_DIR$/src/requirements.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,8 +50,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements_dev.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/requirements_dev.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -96,36 +92,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>`</find>
-      <find>user.html</find>
-      <find>RandomProfileDetailView</find>
-      <find>set_language</find>
-      <find>_la</find>
-      <find>sta</find>
-      <find>get_settings_value</find>
-      <find>_lang</find>
-      <find>endblock</find>
-      <find>examples</find>
-      <find>staticfiles</find>
-      <find>build-assets</find>
-      <find>storefront</find>
-      <find>storefrontF</find>
-      <find>Local</find>
-      <find>Static/Static_Local</find>
-      <find>assets</find>
-      <find>ass</find>
-      <find>data-cart-summary-url</find>
-      <find>Server</find>
-      <find>favicon</find>
-      <find>static</find>
-      <find>conf.core.utils</find>
-      <find>user</find>
-      <find>get_user_model</find>
-      <find>HomeView</find>
-      <find>option</find>
       <find>babel</find>
       <find>preset-stage</find>
       <find>presets</find>
+      <find>certifi</find>
+      <find>chardet==3.0.4</find>
+      <find>dj-database-url==0.4.2</find>
+      <find>Django==1.11.2</find>
+      <find>django-babel==0.6.2</find>
+      <find>django-countries==5.2ls</find>
+      <find>django-countrie</find>
+      <find>django-countries==5.2</find>
+      <find>django-crispy-forms==1.6.1</find>
+      <find>django-crispy-forms</find>
+      <find>django-prices==1.0.0</find>
+      <find>django-prices-openexchangerates==1.0.0</find>
+      <find>django-versatileimagefield==1.9</find>
+      <find>django-webpack-loader==0.5.0</find>
+      <find>gunicorn==19.7.1</find>
+      <find>gunicorn</find>
+      <find>idna==2.6</find>
+      <find>maxminddb==1.3.0</find>
+      <find>maxminddb-geolite2==2017.803</find>
+      <find>olefile==0.44</find>
+      <find>Pillow==4.1.1</find>
+      <find>prices==1.0.0</find>
+      <find>psycopg2==2.7.1</find>
+      <find>pytz==2017.2</find>
+      <find>requests==2.18.4</find>
+      <find>typing==3.6.4</find>
+      <find>urllib3==1.22</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -159,9 +155,9 @@
         <option value="$PROJECT_DIR$/src/conf/core/utils/__init__.py" />
         <option value="$PROJECT_DIR$/src/conf/seo/schema/webpage.py" />
         <option value="$PROJECT_DIR$/src/menus/views.py" />
-        <option value="$PROJECT_DIR$/src/requirements.txt" />
         <option value="$PROJECT_DIR$/src/conf/settings/base.py" />
         <option value="$PROJECT_DIR$/src/package.json" />
+        <option value="$PROJECT_DIR$/src/requirements.txt" />
       </list>
     </option>
   </component>
@@ -423,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524190381685</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary=".">
+      <created>1525242092497</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1525242092497</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView">
@@ -822,14 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/requirements_dev.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/conf/settings/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1770">
@@ -854,18 +849,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/requirements_dev.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding />
         </state>
       </provider>
