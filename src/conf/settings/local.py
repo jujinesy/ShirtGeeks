@@ -5,7 +5,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 AUTO_CONFIRM = False
-HOSTS_NAME = 'http://127.0.0.1:8000'
+HOSTS_NAME = 'http://127.0.0.1:7999'
 #HOSTS_NAME = 'http://10.211.55.7'
 
 CORS_REPLACE_HTTPS_REFERER      = False

@@ -121,7 +121,7 @@ INSTALLED_APPS = [
     # External apps
     # 'versatileimagefield',
     'django_babel',
-    # 'bootstrap4',
+    'bootstrap4',
     # 'django_prices',
     'django_prices_openexchangerates',
     # 'graphene_django',

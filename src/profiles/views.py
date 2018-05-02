@@ -34,7 +34,7 @@ def activate_user_view(request, code=None, *args, **kwargs):
 
 class RegisterView(SuccessMessageMixin, CreateView):
     form_class = RegisterForm
-    template_name = 'registration/register.html'
+    template_name = 'account/signup.html'
     success_url = '/'
     success_message = "Your account was created successfully. Please check your email."
 

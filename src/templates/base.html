@@ -67,30 +67,31 @@
             {% if user.is_authenticated %}
               {% if user.is_staff or request.impersonator.is_staff %}
                 <li>
-                  <a href="{% url "dashboard:index" %}" target="_blank" rel="noopener">
+{#                  <a href="{% url "dashboard:index" %}" target="_blank" rel="noopener">#}
                     {% trans "Dashboard" context "Main navigation item" %}
-                  </a>
+{#                  </a>#}
                 </li>
               {% endif %}
               <li>
-                <a href="{% url "account:details" %}">
-                  {% trans "Your account" context "Main navigation item" %}</a>
+{#                <a href="{% url "account:details" %}">#}
+                  {% trans "Your account" context "Main navigation item" %}
+{#                </a>#}
               </li>
               {% if user.is_impersonate %}
                 <li>
-                  <a href="{% url "impersonate-stop" %}">
+{#                  <a href="{% url "impersonate-stop" %}">#}
                     {% trans 'Stop impersonating' context 'Main navigation item' %}
-                  </a>
+{#                  </a>#}
                 </li>
               {% else %}
                 <li>
-                  <a href="{% url "account:logout" %}">
+                  <a href="{% url "logout" %}">
                     {% trans "Log out" context "Main navigation item" %}</a>
                 </li>
               {% endif %}
             {% else %}
               <li>
-                <a rel="nofollow" href="{% url "register" %}">
+                <a rel="nofollow" href="{% url "signup" %}">
                   {% trans "Register" context "Main navigation item" %}</a>
               </li>
               <li>
@@ -233,7 +234,7 @@
               {% endif %}
             {% else %}
               <li>
-                <a rel="nofollow" href="{% url "register" %}">
+                <a rel="nofollow" href="{% url "signup" %}">
                   {% trans "Register" context "Main navigation item" %}
                 </a>
               </li>
