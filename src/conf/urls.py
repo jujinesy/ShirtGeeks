@@ -14,7 +14,7 @@ from menus.views import HomeView, AllUserRecentItemListView
 from profiles.views import ProfileFollowToggle, RegisterView, activate_user_view
 
 non_translatable_urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    url(r'^jesses/', admin.site.urls),
     url(r'^i18n/$', set_language, name='set_language'),
     # DEBUG FALSE에서 정적파일 쓰고싶으면 python manage.py runserver --insecure
 # 또는 아래 처럼
