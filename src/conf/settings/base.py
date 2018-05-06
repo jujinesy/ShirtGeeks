@@ -209,8 +209,8 @@ loaders = [
     # 'django.template.loaders.cached.Loader',
 ]
 
-if not DEBUG:
-    loaders = [('django.template.loaders.cached.Loader', loaders)]
+# if not DEBUG:
+#     loaders = [('django.template.loaders.cached.Loader', loaders)]
 
 TEMPLATES = [
     {
@@ -369,5 +369,5 @@ MACHINA_DEFAULT_AUTHENTICATED_USER_FORUM_PERMISSIONS = [
     'can_create_polls',
     'can_vote_in_polls',
     'can_download_file',
-    'can_download_file',
+    'can_attach_file',
 ]
