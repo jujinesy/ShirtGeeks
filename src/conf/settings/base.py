@@ -16,6 +16,10 @@ import json
 from django.core.exceptions import ImproperlyConfigured
 from django.utils.translation import gettext_lazy as _
 
+from machina import get_apps as get_machina_apps
+from machina import MACHINA_MAIN_TEMPLATE_DIR
+from machina import MACHINA_MAIN_STATIC_DIR
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 PROJECT_ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), '..'))
@@ -141,7 +145,12 @@ INSTALLED_APPS = [
     'menus',
     'profiles',
     'restaurants',
-]
+
+    # Machina related apps:
+    'mptt',
+    'haystack',
+    'widget_tweaks',
+] + get_machina_apps()
 
 WEBPACK_LOADER = {
     'DEFAULT': {
@@ -164,6 +173,9 @@ MIDDLEWARE = [
 
     'django.middleware.locale.LocaleMiddleware',
     'django_babel.middleware.LocaleMiddleware',
+
+    # Machina
+    'machina.apps.forum_permission.middleware.ForumPermissionMiddleware',
 ]
 
 ROOT_URLCONF = 'conf.urls'
@@ -186,11 +198,16 @@ context_processors = [
     'conf.site.context_processors.site',
     # 'social_django.context_processors.backends',
     # 'social_django.context_processors.login_redirect',
+
+    # Machina
+    'machina.core.context_processors.metadata',
 ]
 
 loaders = [
     'django.template.loaders.filesystem.Loader',
-    'django.template.loaders.app_directories.Loader']
+    'django.template.loaders.app_directories.Loader',
+    # 'django.template.loaders.cached.Loader',
+]
 
 if not DEBUG:
     loaders = [('django.template.loaders.cached.Loader', loaders)]
@@ -198,12 +215,13 @@ if not DEBUG:
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
-        'APP_DIRS': True,
+        'DIRS': [os.path.join(BASE_DIR, 'templates'),
+                 MACHINA_MAIN_TEMPLATE_DIR,],
+        # 'APP_DIRS': True,
         'OPTIONS': {
             'debug': DEBUG,
             'context_processors': context_processors,
-            # 'loaders': loaders,
+            'loaders': loaders,
             'libraries': {
                 'custom_tags': 'templatetags.custom_tags',
             }
@@ -283,6 +301,8 @@ STATIC_URL = '/static/'   #주소창에보이는 스태틱주소
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR+"/Static/", "Static_Local"),
     #'/var/www/static/',
+
+    MACHINA_MAIN_STATIC_DIR,
 ]
 STATIC_ROOT = os.path.join(BASE_DIR+"/Static/", 'Static_Server')
 
@@ -311,3 +331,43 @@ AVAILABLE_CURRENCIES = [DEFAULT_CURRENCY]
 ENABLE_SSL = False
 
 ENABLE_SEARCH = False
+
+
+
+
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+    },
+    'machina_attachments': {
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+        'LOCATION': '/tmp',
+    },
+}
+
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.simple_backend.SimpleEngine',
+    },
+}
+
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
+        'PATH': os.path.join(BASE_DIR, 'whoosh_index'),
+    },
+}
+
+MACHINA_DEFAULT_AUTHENTICATED_USER_FORUM_PERMISSIONS = [
+    'can_see_forum',
+    'can_read_forum',
+    'can_start_new_topics',
+    'can_reply_to_topics',
+    'can_edit_own_posts',
+    'can_post_without_approval',
+    'can_create_polls',
+    'can_vote_in_polls',
+    'can_download_file',
+    'can_download_file',
+]

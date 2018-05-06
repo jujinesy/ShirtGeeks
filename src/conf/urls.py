@@ -9,10 +9,10 @@ from django.conf.urls.i18n import i18n_patterns
 from django.views.i18n import JavaScriptCatalog, set_language
 from django.contrib.auth.views import LoginView, LogoutView
 
-
-
 from menus.views import HomeView, AllUserRecentItemListView
 from profiles.views import ProfileFollowToggle, RegisterView, activate_user_view
+
+from machina.app import board
 
 non_translatable_urlpatterns = [
     url(r'^jesses/', admin.site.urls),
@@ -38,6 +38,9 @@ translatable_urlpatterns = [
     url(r'^restaurants/', include('restaurants.urls', namespace='restaurants')),
     url(r'^about/$', TemplateView.as_view(template_name='about.html'), name='about'),
     url(r'^contact/$', TemplateView.as_view(template_name='contact.html'), name='contact'),
+
+    # Apps
+    url(r'^forum/', include(board.urls)),
     ]
 
 urlpatterns = non_translatable_urlpatterns + i18n_patterns(
