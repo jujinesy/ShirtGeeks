@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 01:32-0500\n"
+"POT-Creation-Date: 2018-05-06 05:47-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Jihan Chung <jihanchung20@gmail.com>, 2017\n"
 "Language-Team: Korean (https://www.transifex.com/mirumee/teams/34782/ko/)\n"
@@ -18,94 +18,94 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: conf/settings/base.py:253
+#: conf/settings/base.py:271
 #, fuzzy
 #| msgid "Variant"
 msgid "Bulgarian"
 msgstr "옵션"
 
-#: conf/settings/base.py:254
+#: conf/settings/base.py:272
 msgid "German"
 msgstr ""
 
-#: conf/settings/base.py:255
+#: conf/settings/base.py:273
 msgid "English"
 msgstr ""
 
-#: conf/settings/base.py:256
+#: conf/settings/base.py:274
 msgid "Spanish"
 msgstr ""
 
-#: conf/settings/base.py:257
+#: conf/settings/base.py:275
 msgid "Persian (Iran)"
 msgstr ""
 
-#: conf/settings/base.py:258
+#: conf/settings/base.py:276
 msgid "French"
 msgstr ""
 
-#: conf/settings/base.py:259
+#: conf/settings/base.py:277
 #, fuzzy
 #| msgid "Variant"
 msgid "Hungarian"
 msgstr "옵션"
 
-#: conf/settings/base.py:260
+#: conf/settings/base.py:278
 msgid "Italian"
 msgstr ""
 
-#: conf/settings/base.py:261
+#: conf/settings/base.py:279
 msgid "Japanese"
 msgstr ""
 
-#: conf/settings/base.py:262
+#: conf/settings/base.py:280
 msgid "Korean"
 msgstr ""
 
-#: conf/settings/base.py:263
+#: conf/settings/base.py:281
 msgid "Norwegian"
 msgstr ""
 
-#: conf/settings/base.py:264
+#: conf/settings/base.py:282
 msgid "Dutch"
 msgstr ""
 
-#: conf/settings/base.py:265
+#: conf/settings/base.py:283
 #, fuzzy
 #| msgctxt "Page availability status"
 #| msgid "Published"
 msgid "Polish"
 msgstr "퍼블리싱 됨"
 
-#: conf/settings/base.py:266
+#: conf/settings/base.py:284
 msgid "Portuguese (Brazil)"
 msgstr ""
 
-#: conf/settings/base.py:267
+#: conf/settings/base.py:285
 msgid "Romanian"
 msgstr ""
 
-#: conf/settings/base.py:268
+#: conf/settings/base.py:286
 msgid "Russian"
 msgstr ""
 
-#: conf/settings/base.py:269
+#: conf/settings/base.py:287
 msgid "Slovak"
 msgstr ""
 
-#: conf/settings/base.py:270
+#: conf/settings/base.py:288
 msgid "Turkish"
 msgstr ""
 
-#: conf/settings/base.py:271
+#: conf/settings/base.py:289
 msgid "Ukrainian"
 msgstr ""
 
-#: conf/settings/base.py:272
+#: conf/settings/base.py:290
 msgid "Vietnamese"
 msgstr ""
 
-#: conf/settings/base.py:273
+#: conf/settings/base.py:291
 msgid "Chinese"
 msgstr ""
 
@@ -119,42 +119,372 @@ msgctxt "Permission description"
 msgid "Can view site settings"
 msgstr "사이트 설정을 볼  수 있습니다"
 
-#: templates/base.html:71
-msgctxt "Main navigation item"
-msgid "Dashboard"
-msgstr "대시보드"
+#: templates/account/address_delete.html:6
+msgctxt "Remove address form action"
+msgid "Remove Address"
+msgstr "주소 삭제"
 
+#: templates/account/address_delete.html:9
+msgctxt "Remove address form action"
+msgid "Cancel"
+msgstr "취소"
+
+#: templates/account/address_edit.html:7
+msgctxt "Edit address page title"
+msgid "Edit address"
+msgstr "주소 수정"
+
+#: templates/account/address_edit.html:9
+msgctxt "New address page title"
+msgid "New address"
+msgstr "새로운 주소"
+
+#: templates/account/address_edit.html:16 templates/account/details.html:16
+#: templates/account/password_change.html:7
+msgctxt "Main navigation item"
+msgid "Home"
+msgstr "홈"
+
+#: templates/account/address_edit.html:21
+msgctxt "Edit/new address breadcrumb"
+msgid "Your profile"
+msgstr "프로필"
+
+#: templates/account/address_edit.html:27
+msgctxt "Edit address breadcrumb"
+msgid "Edit address"
+msgstr "주소 수정"
+
+#: templates/account/address_edit.html:33
+msgctxt "New address breadcrumb"
+msgid "New address"
+msgstr "새로운 주소"
+
+#: templates/account/address_edit.html:47
+msgctxt "Edit address title"
+msgid "Edit address"
+msgstr "주소 수정"
+
+#: templates/account/address_edit.html:49
+msgctxt "New address title"
+msgid "New address"
+msgstr "새로운 주소"
+
+#: templates/account/address_edit.html:57
+msgctxt "Edit/new address primary action"
+msgid "Save changes"
+msgstr "변경 저장"
+
+#: templates/account/details.html:10
+msgctxt "User profile page title"
+msgid "Your profile"
+msgstr "프로필"
+
+#: templates/account/details.html:19 templates/account/password_change.html:8
 #: templates/base.html:77
 msgctxt "Main navigation item"
 msgid "Your account"
 msgstr "마이페이지"
 
-#: templates/base.html:82
+#: templates/account/details.html:26
+msgid "My account"
+msgstr "내 주소"
+
+#: templates/account/details.html:30
+msgctxt "User profile tab"
+msgid "Recent Orders"
+msgstr "최근 주문"
+
+#: templates/account/details.html:36
+msgctxt "User profile tab"
+msgid "Change password"
+msgstr "비밀번호 변경"
+
+#: templates/account/details.html:42
+msgctxt "User profile tab"
+msgid "Addresses book"
+msgstr "주소 모음"
+
+#: templates/account/details.html:54
+msgctxt "Recent orders column title"
+msgid "Order"
+msgstr "주문"
+
+#: templates/account/details.html:57
+msgctxt "Recent orders column title"
+msgid "Date"
+msgstr "날짜"
+
+#: templates/account/details.html:60
+msgctxt "Recent orders column title"
+msgid "Summary"
+msgstr "요약"
+
+#: templates/account/details.html:63
+msgctxt "Recent orders column title"
+msgid "Status"
+msgstr "상태"
+
+#: templates/account/details.html:85
+msgctxt "Recent orders link text"
+msgid "Details"
+msgstr "상세"
+
+#: templates/account/details.html:100
+msgctxt "No recent orders text"
+msgid "There are not any completed orders yet."
+msgstr "아직 완료된 주문이 없습니다."
+
+#: templates/account/details.html:111
+msgctxt "User profile action"
+msgid "Change password"
+msgstr "비밀번호 변경"
+
+#: templates/account/details.html:126
+msgctxt "User address action"
+msgid "Edit"
+msgstr "수정"
+
+#: templates/account/details.html:142
+msgctxt "No addresses text"
+msgid "You will see new addresses here after first successful checkout."
+msgstr "첫번째 주문이 완료되면 주소를 확인할 수 있습니다."
+
+#: templates/account/login.html:5 templates/registration/login.html:5
+msgctxt "Login page title"
+msgid "Log in"
+msgstr "로그인"
+
+#: templates/account/login.html:16 templates/registration/login.html:16
+msgctxt "Login form secondary title"
+msgid "Don't have an account yet?"
+msgstr "아직 계정이 없으신가요?"
+
+#: templates/account/login.html:21 templates/registration/login.html:21
+msgctxt "Login form secondary action"
+msgid "Register"
+msgstr "회원가입"
+
+#: templates/account/login.html:26 templates/registration/login.html:26
+msgctxt "Login form title"
+msgid "Log in"
+msgstr "로그인"
+
+#: templates/account/partials/already_logged_in.html:5
+#, python-format
+msgctxt "Already logged in warning message"
+msgid "You are already logged in as %(user)s."
+msgstr "%(user)s 로 이미 로그인 하였습니다."
+
+#: templates/account/partials/login_form.html:16
+msgctxt "Login form primary action"
+msgid "Log in"
+msgstr "로그인"
+
+#: templates/account/partials/login_form.html:19
+msgctxt "Login form secondary link"
+msgid "Forgot password?"
+msgstr "비밀번호를 잊었나요?"
+
+#: templates/account/partials/login_form.html:29
+msgid "Facebook"
+msgstr "페이스북"
+
+#: templates/account/partials/login_form.html:37
+msgid "Google"
+msgstr "구글"
+
+#: templates/account/password_change.html:9
+msgctxt "Password change breadcrumb"
+msgid "Edit"
+msgstr "수정"
+
+#: templates/account/password_change.html:22
+msgctxt "Password change form legend"
+msgid "Change Password"
+msgstr "비밀번호 변경"
+
+#: templates/account/password_change.html:28
+msgctxt "Password change form primary action"
+msgid "Save new password"
+msgstr "새로운 비밀번호 저장"
+
+#: templates/account/password_reset.html:6
+msgctxt "Password reset page title"
+msgid "Password reset"
+msgstr "비밀번호 초기화"
+
+#: templates/account/password_reset.html:17
+msgctxt "Password reset form title"
+msgid "Forgot your password?"
+msgstr "비밀번호를 잊었나요?"
+
+#: templates/account/password_reset.html:19
+msgctxt "Password reset form help text"
+msgid ""
+"Please let us know the email you have used to register or purchase at our "
+"store."
+msgstr ""
+"당신이 사용하고 있는 혹은 스토어에서 구매 시 사용한 이메일을 적어 주시기 바랍"
+"니다."
+
+#: templates/account/password_reset.html:30
+msgctxt "Password reset primary action"
+msgid "Continue"
+msgstr "계속"
+
+#: templates/account/password_reset_done.html:6
+msgctxt "Password reset done page title"
+msgid "Password Reset"
+msgstr "비밀번호 초기화"
+
+#: templates/account/password_reset_done.html:10
+msgctxt "Password reset done title"
+msgid "Password Reset"
+msgstr "비밀번호 초기화"
+
+#: templates/account/password_reset_done.html:14
+msgctxt "Password reset done text"
+msgid ""
+"We have sent you an e-mail. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+"이메일을 전송하였습니다. 몇분 안에 이메일을 못 받으실 경우 저희쪽으로 연락 주"
+"시기 바랍니다."
+
+#: templates/account/password_reset_from_key.html:6
+msgctxt "Password reset from key page title"
+msgid "Change Password"
+msgstr "비밀번호 변경"
+
+#: templates/account/password_reset_from_key.html:11
+msgid "Bad Token"
+msgstr "배드 토큰"
+
+#: templates/account/password_reset_from_key.html:13
+#, python-format
+msgctxt "Password reset text if key is invalid"
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.<br> Please request a <a href=\"%(passwd_reset_url)s\">new password "
+"reset</a>."
+msgstr ""
+"비밀번호 초기화 링크가 사용불가합니다. <br> <a href=\"%(passwd_reset_url)s\">"
+"새로운 비밀번호 초기화</a>를 요청하여 주시기 바랍니다."
+
+#: templates/account/password_reset_from_key.html:24
+msgctxt "Password reset from key form title"
+msgid "Password Reset"
+msgstr "비밀번호 초기화"
+
+#: templates/account/password_reset_from_key.html:25
+msgctxt "Password reset from key form title"
+msgid "Now you can set new password for you account."
+msgstr "당신 계정의 새로운 비밀번호를 설정할 수 있습니다."
+
+#: templates/account/password_reset_from_key.html:32
+msgctxt "Password reset from key form primary action"
+msgid "Continue"
+msgstr "계속"
+
+#: templates/account/password_reset_from_key.html:39
+msgctxt "Password reset link expired from key form title"
+msgid "Password Reset Link Expired"
+msgstr "비밀번호 초기화 링크가 만료되었습니다"
+
+#: templates/account/password_reset_from_key.html:40
+msgctxt "Password reset from key form title"
+msgid ""
+"Sorry but this link is no longer valid. If you forget your password, please "
+"use link below."
+msgstr ""
+"죄송합니다. 이 링크가 더이상 유효하지 않으니, 아래의 링크를 사용하시기 바랍니"
+"다."
+
+#: templates/account/password_reset_from_key.html:42
+msgctxt "Reset my password link"
+msgid "Reset my password"
+msgstr "비밀번호 초기화"
+
+#: templates/account/password_reset_from_key_done.html:4
+msgctxt "Password reset from key done page title"
+msgid "Password Changed"
+msgstr "비밀번호 변경됨"
+
+#: templates/account/password_reset_from_key_done.html:7
+msgctxt "Password reset from key done title"
+msgid "Password Changed"
+msgstr "비밀번호 변경됨"
+
+#: templates/account/password_reset_from_key_done.html:9
+msgid "Your password is now changed."
+msgstr "당신의 비밀번호가 변경 되었습니다."
+
+#: templates/account/password_reset_from_key_done.html:10
+#, python-format
+msgctxt "Password reset from key done text"
+msgid ""
+"You can now <a href=\"%(login_url)s\">sign in</a> using your new password"
+msgstr ""
+"지금 새로운 비밀번호를 이용하여 <a href=\"%(login_url)s\">로그인</a>할 수 있"
+"습니다"
+
+#: templates/account/signup.html:6
+msgctxt "Signup page title"
+msgid "Sign Up"
+msgstr "가입하기"
+
+#: templates/account/signup.html:17
+msgctxt "Signup form secondary title"
+msgid "Already have an account?"
+msgstr "이미 계정을 가지고 계신가요?"
+
+#: templates/account/signup.html:21
+msgctxt "Signup form secondary action"
+msgid "Log in"
+msgstr "로그인"
+
+#: templates/account/signup.html:28
+msgctxt "Signup form title"
+msgid "Create an account"
+msgstr "계정 생성"
+
+#: templates/account/signup.html:36
+msgctxt "Signup form primary action"
+msgid "Create an account"
+msgstr "계정 생성"
+
+#: templates/base.html:71
+msgctxt "Main navigation item"
+msgid "Dashboard"
+msgstr "대시보드"
+
+#: templates/base.html:83
 msgctxt "Main navigation item"
 msgid "Stop impersonating"
 msgstr "가상유저 사용 중지"
 
-#: templates/base.html:88 templates/base.html:231
+#: templates/base.html:89 templates/base.html:232
 msgctxt "Main navigation item"
 msgid "Log out"
 msgstr "로그아웃"
 
-#: templates/base.html:94 templates/base.html:237
+#: templates/base.html:95 templates/base.html:238
 msgctxt "Main navigation item"
 msgid "Register"
 msgstr "가입"
 
-#: templates/base.html:98 templates/base.html:242
+#: templates/base.html:99 templates/base.html:243
 msgctxt "Main navigation item"
 msgid "Log in"
 msgstr "로그인"
 
-#: templates/base.html:113
+#: templates/base.html:114
 msgctxt "Hamburger button text"
 msgid "menu"
 msgstr "메뉴"
 
-#: templates/base.html:130
+#: templates/base.html:131
 msgid "Search for product"
 msgstr "제품 검색"
 
@@ -656,269 +986,6 @@ msgstr "주목할만한 제품들"
 #~ msgctxt "Sale (discount) label for item in product list"
 #~ msgid "Sale"
 #~ msgstr "할인"
-
-#~ msgctxt "Remove address form action"
-#~ msgid "Remove Address"
-#~ msgstr "주소 삭제"
-
-#~ msgctxt "Remove address form action"
-#~ msgid "Cancel"
-#~ msgstr "취소"
-
-#~ msgctxt "Edit address page title"
-#~ msgid "Edit address"
-#~ msgstr "주소 수정"
-
-#~ msgctxt "New address page title"
-#~ msgid "New address"
-#~ msgstr "새로운 주소"
-
-#~ msgctxt "Main navigation item"
-#~ msgid "Home"
-#~ msgstr "홈"
-
-#~ msgctxt "Edit/new address breadcrumb"
-#~ msgid "Your profile"
-#~ msgstr "프로필"
-
-#~ msgctxt "Edit address breadcrumb"
-#~ msgid "Edit address"
-#~ msgstr "주소 수정"
-
-#~ msgctxt "New address breadcrumb"
-#~ msgid "New address"
-#~ msgstr "새로운 주소"
-
-#~ msgctxt "Edit address title"
-#~ msgid "Edit address"
-#~ msgstr "주소 수정"
-
-#~ msgctxt "New address title"
-#~ msgid "New address"
-#~ msgstr "새로운 주소"
-
-#~ msgctxt "Edit/new address primary action"
-#~ msgid "Save changes"
-#~ msgstr "변경 저장"
-
-#~ msgctxt "User profile page title"
-#~ msgid "Your profile"
-#~ msgstr "프로필"
-
-#~ msgid "My account"
-#~ msgstr "내 주소"
-
-#~ msgctxt "User profile tab"
-#~ msgid "Recent Orders"
-#~ msgstr "최근 주문"
-
-#~ msgctxt "User profile tab"
-#~ msgid "Change password"
-#~ msgstr "비밀번호 변경"
-
-#~ msgctxt "User profile tab"
-#~ msgid "Addresses book"
-#~ msgstr "주소 모음"
-
-#~ msgctxt "Recent orders column title"
-#~ msgid "Order"
-#~ msgstr "주문"
-
-#~ msgctxt "Recent orders column title"
-#~ msgid "Date"
-#~ msgstr "날짜"
-
-#~ msgctxt "Recent orders column title"
-#~ msgid "Summary"
-#~ msgstr "요약"
-
-#~ msgctxt "Recent orders column title"
-#~ msgid "Status"
-#~ msgstr "상태"
-
-#~ msgctxt "Recent orders link text"
-#~ msgid "Details"
-#~ msgstr "상세"
-
-#~ msgctxt "No recent orders text"
-#~ msgid "There are not any completed orders yet."
-#~ msgstr "아직 완료된 주문이 없습니다."
-
-#~ msgctxt "User profile action"
-#~ msgid "Change password"
-#~ msgstr "비밀번호 변경"
-
-#~ msgctxt "User address action"
-#~ msgid "Edit"
-#~ msgstr "수정"
-
-#~ msgctxt "No addresses text"
-#~ msgid "You will see new addresses here after first successful checkout."
-#~ msgstr "첫번째 주문이 완료되면 주소를 확인할 수 있습니다."
-
-#~ msgctxt "Login page title"
-#~ msgid "Log in"
-#~ msgstr "로그인"
-
-#~ msgctxt "Login form secondary title"
-#~ msgid "Don't have an account yet?"
-#~ msgstr "아직 계정이 없으신가요?"
-
-#~ msgctxt "Login form secondary action"
-#~ msgid "Register"
-#~ msgstr "회원가입"
-
-#~ msgctxt "Login form title"
-#~ msgid "Log in"
-#~ msgstr "로그인"
-
-#~ msgctxt "Already logged in warning message"
-#~ msgid "You are already logged in as %(user)s."
-#~ msgstr "%(user)s 로 이미 로그인 하였습니다."
-
-#~ msgctxt "Login form primary action"
-#~ msgid "Log in"
-#~ msgstr "로그인"
-
-#~ msgctxt "Login form secondary link"
-#~ msgid "Forgot password?"
-#~ msgstr "비밀번호를 잊었나요?"
-
-#~ msgid "Facebook"
-#~ msgstr "페이스북"
-
-#~ msgid "Google"
-#~ msgstr "구글"
-
-#~ msgctxt "Password change breadcrumb"
-#~ msgid "Edit"
-#~ msgstr "수정"
-
-#~ msgctxt "Password change form legend"
-#~ msgid "Change Password"
-#~ msgstr "비밀번호 변경"
-
-#~ msgctxt "Password change form primary action"
-#~ msgid "Save new password"
-#~ msgstr "새로운 비밀번호 저장"
-
-#~ msgctxt "Password reset page title"
-#~ msgid "Password reset"
-#~ msgstr "비밀번호 초기화"
-
-#~ msgctxt "Password reset form title"
-#~ msgid "Forgot your password?"
-#~ msgstr "비밀번호를 잊었나요?"
-
-#~ msgctxt "Password reset form help text"
-#~ msgid ""
-#~ "Please let us know the email you have used to register or purchase at our "
-#~ "store."
-#~ msgstr ""
-#~ "당신이 사용하고 있는 혹은 스토어에서 구매 시 사용한 이메일을 적어 주시기 "
-#~ "바랍니다."
-
-#~ msgctxt "Password reset primary action"
-#~ msgid "Continue"
-#~ msgstr "계속"
-
-#~ msgctxt "Password reset done page title"
-#~ msgid "Password Reset"
-#~ msgstr "비밀번호 초기화"
-
-#~ msgctxt "Password reset done title"
-#~ msgid "Password Reset"
-#~ msgstr "비밀번호 초기화"
-
-#~ msgctxt "Password reset done text"
-#~ msgid ""
-#~ "We have sent you an e-mail. Please contact us if you do not receive it "
-#~ "within a few minutes."
-#~ msgstr ""
-#~ "이메일을 전송하였습니다. 몇분 안에 이메일을 못 받으실 경우 저희쪽으로 연"
-#~ "락 주시기 바랍니다."
-
-#~ msgctxt "Password reset from key page title"
-#~ msgid "Change Password"
-#~ msgstr "비밀번호 변경"
-
-#~ msgid "Bad Token"
-#~ msgstr "배드 토큰"
-
-#~ msgctxt "Password reset text if key is invalid"
-#~ msgid ""
-#~ "The password reset link was invalid, possibly because it has already been "
-#~ "used.<br> Please request a <a href=\"%(passwd_reset_url)s\">new password "
-#~ "reset</a>."
-#~ msgstr ""
-#~ "비밀번호 초기화 링크가 사용불가합니다. <br> <a href=\"%(passwd_reset_url)s"
-#~ "\">새로운 비밀번호 초기화</a>를 요청하여 주시기 바랍니다."
-
-#~ msgctxt "Password reset from key form title"
-#~ msgid "Password Reset"
-#~ msgstr "비밀번호 초기화"
-
-#~ msgctxt "Password reset from key form title"
-#~ msgid "Now you can set new password for you account."
-#~ msgstr "당신 계정의 새로운 비밀번호를 설정할 수 있습니다."
-
-#~ msgctxt "Password reset from key form primary action"
-#~ msgid "Continue"
-#~ msgstr "계속"
-
-#~ msgctxt "Password reset link expired from key form title"
-#~ msgid "Password Reset Link Expired"
-#~ msgstr "비밀번호 초기화 링크가 만료되었습니다"
-
-#~ msgctxt "Password reset from key form title"
-#~ msgid ""
-#~ "Sorry but this link is no longer valid. If you forget your password, "
-#~ "please use link below."
-#~ msgstr ""
-#~ "죄송합니다. 이 링크가 더이상 유효하지 않으니, 아래의 링크를 사용하시기 바"
-#~ "랍니다."
-
-#~ msgctxt "Reset my password link"
-#~ msgid "Reset my password"
-#~ msgstr "비밀번호 초기화"
-
-#~ msgctxt "Password reset from key done page title"
-#~ msgid "Password Changed"
-#~ msgstr "비밀번호 변경됨"
-
-#~ msgctxt "Password reset from key done title"
-#~ msgid "Password Changed"
-#~ msgstr "비밀번호 변경됨"
-
-#~ msgid "Your password is now changed."
-#~ msgstr "당신의 비밀번호가 변경 되었습니다."
-
-#~ msgctxt "Password reset from key done text"
-#~ msgid ""
-#~ "You can now <a href=\"%(login_url)s\">sign in</a> using your new password"
-#~ msgstr ""
-#~ "지금 새로운 비밀번호를 이용하여 <a href=\"%(login_url)s\">로그인</a>할 수 "
-#~ "있습니다"
-
-#~ msgctxt "Signup page title"
-#~ msgid "Sign Up"
-#~ msgstr "가입하기"
-
-#~ msgctxt "Signup form secondary title"
-#~ msgid "Already have an account?"
-#~ msgstr "이미 계정을 가지고 계신가요?"
-
-#~ msgctxt "Signup form secondary action"
-#~ msgid "Log in"
-#~ msgstr "로그인"
-
-#~ msgctxt "Signup form title"
-#~ msgid "Create an account"
-#~ msgstr "계정 생성"
-
-#~ msgctxt "Signup form primary action"
-#~ msgid "Create an account"
-#~ msgstr "계정 생성"
 
 #~ msgctxt "Main navigation item"
 #~ msgid "Your Cart"

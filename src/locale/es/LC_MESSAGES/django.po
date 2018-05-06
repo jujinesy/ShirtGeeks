@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 01:32-0500\n"
+"POT-Creation-Date: 2018-05-06 05:47-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Mario Álvarez <ahoy@m4grio.me>, 2017\n"
 "Language-Team: Spanish (https://www.transifex.com/mirumee/teams/34782/es/)\n"
@@ -18,94 +18,94 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: conf/settings/base.py:253
+#: conf/settings/base.py:271
 #, fuzzy
 #| msgid "Variant"
 msgid "Bulgarian"
 msgstr "Variante"
 
-#: conf/settings/base.py:254
+#: conf/settings/base.py:272
 msgid "German"
 msgstr ""
 
-#: conf/settings/base.py:255
+#: conf/settings/base.py:273
 msgid "English"
 msgstr ""
 
-#: conf/settings/base.py:256
+#: conf/settings/base.py:274
 msgid "Spanish"
 msgstr ""
 
-#: conf/settings/base.py:257
+#: conf/settings/base.py:275
 msgid "Persian (Iran)"
 msgstr ""
 
-#: conf/settings/base.py:258
+#: conf/settings/base.py:276
 msgid "French"
 msgstr ""
 
-#: conf/settings/base.py:259
+#: conf/settings/base.py:277
 #, fuzzy
 #| msgid "Variant"
 msgid "Hungarian"
 msgstr "Variante"
 
-#: conf/settings/base.py:260
+#: conf/settings/base.py:278
 msgid "Italian"
 msgstr ""
 
-#: conf/settings/base.py:261
+#: conf/settings/base.py:279
 msgid "Japanese"
 msgstr ""
 
-#: conf/settings/base.py:262
+#: conf/settings/base.py:280
 msgid "Korean"
 msgstr ""
 
-#: conf/settings/base.py:263
+#: conf/settings/base.py:281
 msgid "Norwegian"
 msgstr ""
 
-#: conf/settings/base.py:264
+#: conf/settings/base.py:282
 msgid "Dutch"
 msgstr ""
 
-#: conf/settings/base.py:265
+#: conf/settings/base.py:283
 #, fuzzy
 #| msgctxt "Page availability status"
 #| msgid "Published"
 msgid "Polish"
 msgstr "Publicado"
 
-#: conf/settings/base.py:266
+#: conf/settings/base.py:284
 msgid "Portuguese (Brazil)"
 msgstr ""
 
-#: conf/settings/base.py:267
+#: conf/settings/base.py:285
 msgid "Romanian"
 msgstr ""
 
-#: conf/settings/base.py:268
+#: conf/settings/base.py:286
 msgid "Russian"
 msgstr ""
 
-#: conf/settings/base.py:269
+#: conf/settings/base.py:287
 msgid "Slovak"
 msgstr ""
 
-#: conf/settings/base.py:270
+#: conf/settings/base.py:288
 msgid "Turkish"
 msgstr ""
 
-#: conf/settings/base.py:271
+#: conf/settings/base.py:289
 msgid "Ukrainian"
 msgstr ""
 
-#: conf/settings/base.py:272
+#: conf/settings/base.py:290
 msgid "Vietnamese"
 msgstr ""
 
-#: conf/settings/base.py:273
+#: conf/settings/base.py:291
 msgid "Chinese"
 msgstr ""
 
@@ -119,42 +119,373 @@ msgctxt "Permission description"
 msgid "Can view site settings"
 msgstr "Puede ver la configuración del sitio"
 
-#: templates/base.html:71
-msgctxt "Main navigation item"
-msgid "Dashboard"
-msgstr "Tablero de Control"
+#: templates/account/address_delete.html:6
+msgctxt "Remove address form action"
+msgid "Remove Address"
+msgstr "Borrar dirección"
 
+#: templates/account/address_delete.html:9
+msgctxt "Remove address form action"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: templates/account/address_edit.html:7
+msgctxt "Edit address page title"
+msgid "Edit address"
+msgstr "Modificar dirección"
+
+#: templates/account/address_edit.html:9
+msgctxt "New address page title"
+msgid "New address"
+msgstr "Nueva dirección"
+
+#: templates/account/address_edit.html:16 templates/account/details.html:16
+#: templates/account/password_change.html:7
+msgctxt "Main navigation item"
+msgid "Home"
+msgstr "Inicio"
+
+#: templates/account/address_edit.html:21
+msgctxt "Edit/new address breadcrumb"
+msgid "Your profile"
+msgstr "Tu perfil"
+
+#: templates/account/address_edit.html:27
+msgctxt "Edit address breadcrumb"
+msgid "Edit address"
+msgstr "Modificar dirección"
+
+#: templates/account/address_edit.html:33
+msgctxt "New address breadcrumb"
+msgid "New address"
+msgstr "Nueva dirección"
+
+#: templates/account/address_edit.html:47
+msgctxt "Edit address title"
+msgid "Edit address"
+msgstr "Editar dirección"
+
+#: templates/account/address_edit.html:49
+msgctxt "New address title"
+msgid "New address"
+msgstr "Nueva dirección"
+
+#: templates/account/address_edit.html:57
+msgctxt "Edit/new address primary action"
+msgid "Save changes"
+msgstr "Guardar cambios"
+
+#: templates/account/details.html:10
+msgctxt "User profile page title"
+msgid "Your profile"
+msgstr "Tu perfil"
+
+#: templates/account/details.html:19 templates/account/password_change.html:8
 #: templates/base.html:77
 msgctxt "Main navigation item"
 msgid "Your account"
 msgstr "Tu cuenta"
 
-#: templates/base.html:82
+#: templates/account/details.html:26
+msgid "My account"
+msgstr "Mi cuenta"
+
+#: templates/account/details.html:30
+msgctxt "User profile tab"
+msgid "Recent Orders"
+msgstr "Últimos pedidos"
+
+#: templates/account/details.html:36
+msgctxt "User profile tab"
+msgid "Change password"
+msgstr "Cambiar contraseña"
+
+#: templates/account/details.html:42
+msgctxt "User profile tab"
+msgid "Addresses book"
+msgstr "Libro de direcciones"
+
+#: templates/account/details.html:54
+msgctxt "Recent orders column title"
+msgid "Order"
+msgstr "Pedido"
+
+#: templates/account/details.html:57
+msgctxt "Recent orders column title"
+msgid "Date"
+msgstr "Fecha"
+
+#: templates/account/details.html:60
+msgctxt "Recent orders column title"
+msgid "Summary"
+msgstr "Resumen"
+
+#: templates/account/details.html:63
+msgctxt "Recent orders column title"
+msgid "Status"
+msgstr "Estado"
+
+#: templates/account/details.html:85
+msgctxt "Recent orders link text"
+msgid "Details"
+msgstr "Detalles"
+
+#: templates/account/details.html:100
+msgctxt "No recent orders text"
+msgid "There are not any completed orders yet."
+msgstr "Aún no hay ningún pedido completado."
+
+#: templates/account/details.html:111
+msgctxt "User profile action"
+msgid "Change password"
+msgstr "Cambiar contraseña"
+
+#: templates/account/details.html:126
+msgctxt "User address action"
+msgid "Edit"
+msgstr "Editar"
+
+#: templates/account/details.html:142
+msgctxt "No addresses text"
+msgid "You will see new addresses here after first successful checkout."
+msgstr "Verás nuevas direcciones aquí después del primer checkout exitoso."
+
+#: templates/account/login.html:5 templates/registration/login.html:5
+msgctxt "Login page title"
+msgid "Log in"
+msgstr "Iniciar Sesión"
+
+#: templates/account/login.html:16 templates/registration/login.html:16
+msgctxt "Login form secondary title"
+msgid "Don't have an account yet?"
+msgstr "¿Todavía no tenes una cuenta?"
+
+#: templates/account/login.html:21 templates/registration/login.html:21
+msgctxt "Login form secondary action"
+msgid "Register"
+msgstr "Registrarse"
+
+#: templates/account/login.html:26 templates/registration/login.html:26
+msgctxt "Login form title"
+msgid "Log in"
+msgstr "Iniciar Sesión"
+
+#: templates/account/partials/already_logged_in.html:5
+#, python-format
+msgctxt "Already logged in warning message"
+msgid "You are already logged in as %(user)s."
+msgstr "Has iniciado sesión como %(user)s"
+
+#: templates/account/partials/login_form.html:16
+msgctxt "Login form primary action"
+msgid "Log in"
+msgstr "Iniciar sesión"
+
+#: templates/account/partials/login_form.html:19
+msgctxt "Login form secondary link"
+msgid "Forgot password?"
+msgstr "¿Olvidaste tu contraseña?"
+
+#: templates/account/partials/login_form.html:29
+msgid "Facebook"
+msgstr "Facebook"
+
+#: templates/account/partials/login_form.html:37
+msgid "Google"
+msgstr "Google"
+
+#: templates/account/password_change.html:9
+msgctxt "Password change breadcrumb"
+msgid "Edit"
+msgstr "Editar"
+
+#: templates/account/password_change.html:22
+msgctxt "Password change form legend"
+msgid "Change Password"
+msgstr "Cambiar Contraseña"
+
+#: templates/account/password_change.html:28
+msgctxt "Password change form primary action"
+msgid "Save new password"
+msgstr "Guardar nueva contraseña"
+
+#: templates/account/password_reset.html:6
+msgctxt "Password reset page title"
+msgid "Password reset"
+msgstr "Restaurar contraseña"
+
+#: templates/account/password_reset.html:17
+msgctxt "Password reset form title"
+msgid "Forgot your password?"
+msgstr "¿Olvidaste tu contraseña?"
+
+#: templates/account/password_reset.html:19
+msgctxt "Password reset form help text"
+msgid ""
+"Please let us know the email you have used to register or purchase at our "
+"store."
+msgstr ""
+"Por favor indícanos cual es el correo electrónico que usaste para "
+"registrarte o comprar en el sitio"
+
+#: templates/account/password_reset.html:30
+msgctxt "Password reset primary action"
+msgid "Continue"
+msgstr "Continuar"
+
+#: templates/account/password_reset_done.html:6
+msgctxt "Password reset done page title"
+msgid "Password Reset"
+msgstr "Restaurar Contraseña"
+
+#: templates/account/password_reset_done.html:10
+msgctxt "Password reset done title"
+msgid "Password Reset"
+msgstr "Restaurar Contraseña"
+
+#: templates/account/password_reset_done.html:14
+msgctxt "Password reset done text"
+msgid ""
+"We have sent you an e-mail. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+"Te hemos enviado un correo electrónico. Por favor contáctanos si no lo has "
+"recibido dentro de unos pocos minutos."
+
+#: templates/account/password_reset_from_key.html:6
+msgctxt "Password reset from key page title"
+msgid "Change Password"
+msgstr "Cambiar Contraseña"
+
+#: templates/account/password_reset_from_key.html:11
+msgid "Bad Token"
+msgstr "Token Equivocado"
+
+#: templates/account/password_reset_from_key.html:13
+#, python-format
+msgctxt "Password reset text if key is invalid"
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.<br> Please request a <a href=\"%(passwd_reset_url)s\">new password "
+"reset</a>."
+msgstr ""
+"El enlace de restauración de contraseña era inválido, seguramente porque ya "
+"ha sido usado. <br> Por favor solicita un nuevo enlace en <a href="
+"\"%(passwd_reset_url)s\"> nuevo reinicio de contraseña</a>."
+
+#: templates/account/password_reset_from_key.html:24
+msgctxt "Password reset from key form title"
+msgid "Password Reset"
+msgstr "Restaurar Contraseña"
+
+#: templates/account/password_reset_from_key.html:25
+msgctxt "Password reset from key form title"
+msgid "Now you can set new password for you account."
+msgstr "Ahora puedes ingresar una nueva contraseña para tu cuenta."
+
+#: templates/account/password_reset_from_key.html:32
+msgctxt "Password reset from key form primary action"
+msgid "Continue"
+msgstr "Continuar"
+
+#: templates/account/password_reset_from_key.html:39
+msgctxt "Password reset link expired from key form title"
+msgid "Password Reset Link Expired"
+msgstr "El enlace para restaurar la contraseña ha expirado."
+
+#: templates/account/password_reset_from_key.html:40
+msgctxt "Password reset from key form title"
+msgid ""
+"Sorry but this link is no longer valid. If you forget your password, please "
+"use link below."
+msgstr ""
+"Lo sentimos, pero este enlace ya no es válido. Si olvidaste tu contraseña, "
+"por favor utiliza el enlace de abajo."
+
+#: templates/account/password_reset_from_key.html:42
+msgctxt "Reset my password link"
+msgid "Reset my password"
+msgstr "Restaurar mi contraseña"
+
+#: templates/account/password_reset_from_key_done.html:4
+msgctxt "Password reset from key done page title"
+msgid "Password Changed"
+msgstr "Contraseña Cambiada"
+
+#: templates/account/password_reset_from_key_done.html:7
+msgctxt "Password reset from key done title"
+msgid "Password Changed"
+msgstr "Contraseña Cambiada"
+
+#: templates/account/password_reset_from_key_done.html:9
+msgid "Your password is now changed."
+msgstr "Tu contraseña ha sido cambiada."
+
+#: templates/account/password_reset_from_key_done.html:10
+#, python-format
+msgctxt "Password reset from key done text"
+msgid ""
+"You can now <a href=\"%(login_url)s\">sign in</a> using your new password"
+msgstr ""
+"Ahora podés <a href=\"%(login_url)s\">iniciar sesión</a> usando tu nueva "
+"contraseña"
+
+#: templates/account/signup.html:6
+msgctxt "Signup page title"
+msgid "Sign Up"
+msgstr "Registrarse"
+
+#: templates/account/signup.html:17
+msgctxt "Signup form secondary title"
+msgid "Already have an account?"
+msgstr "¿Ya tienes una cuenta?"
+
+#: templates/account/signup.html:21
+msgctxt "Signup form secondary action"
+msgid "Log in"
+msgstr "Iniciar Sesión"
+
+#: templates/account/signup.html:28
+msgctxt "Signup form title"
+msgid "Create an account"
+msgstr "Crea una cuenta"
+
+#: templates/account/signup.html:36
+msgctxt "Signup form primary action"
+msgid "Create an account"
+msgstr "Crea una cuenta"
+
+#: templates/base.html:71
+msgctxt "Main navigation item"
+msgid "Dashboard"
+msgstr "Tablero de Control"
+
+#: templates/base.html:83
 msgctxt "Main navigation item"
 msgid "Stop impersonating"
 msgstr "Detener la emulación"
 
-#: templates/base.html:88 templates/base.html:231
+#: templates/base.html:89 templates/base.html:232
 msgctxt "Main navigation item"
 msgid "Log out"
 msgstr "Cerrar Sesión"
 
-#: templates/base.html:94 templates/base.html:237
+#: templates/base.html:95 templates/base.html:238
 msgctxt "Main navigation item"
 msgid "Register"
 msgstr "Registrarse"
 
-#: templates/base.html:98 templates/base.html:242
+#: templates/base.html:99 templates/base.html:243
 msgctxt "Main navigation item"
 msgid "Log in"
 msgstr "Iniciar Sesión"
 
-#: templates/base.html:113
+#: templates/base.html:114
 msgctxt "Hamburger button text"
 msgid "menu"
 msgstr "menú"
 
-#: templates/base.html:130
+#: templates/base.html:131
 msgid "Search for product"
 msgstr "Buscar producto"
 
@@ -670,270 +1001,6 @@ msgstr "Productos destacados"
 #~ msgctxt "Sale (discount) label for item in product list"
 #~ msgid "Sale"
 #~ msgstr "Dto."
-
-#~ msgctxt "Remove address form action"
-#~ msgid "Remove Address"
-#~ msgstr "Borrar dirección"
-
-#~ msgctxt "Remove address form action"
-#~ msgid "Cancel"
-#~ msgstr "Cancelar"
-
-#~ msgctxt "Edit address page title"
-#~ msgid "Edit address"
-#~ msgstr "Modificar dirección"
-
-#~ msgctxt "New address page title"
-#~ msgid "New address"
-#~ msgstr "Nueva dirección"
-
-#~ msgctxt "Main navigation item"
-#~ msgid "Home"
-#~ msgstr "Inicio"
-
-#~ msgctxt "Edit/new address breadcrumb"
-#~ msgid "Your profile"
-#~ msgstr "Tu perfil"
-
-#~ msgctxt "Edit address breadcrumb"
-#~ msgid "Edit address"
-#~ msgstr "Modificar dirección"
-
-#~ msgctxt "New address breadcrumb"
-#~ msgid "New address"
-#~ msgstr "Nueva dirección"
-
-#~ msgctxt "Edit address title"
-#~ msgid "Edit address"
-#~ msgstr "Editar dirección"
-
-#~ msgctxt "New address title"
-#~ msgid "New address"
-#~ msgstr "Nueva dirección"
-
-#~ msgctxt "Edit/new address primary action"
-#~ msgid "Save changes"
-#~ msgstr "Guardar cambios"
-
-#~ msgctxt "User profile page title"
-#~ msgid "Your profile"
-#~ msgstr "Tu perfil"
-
-#~ msgid "My account"
-#~ msgstr "Mi cuenta"
-
-#~ msgctxt "User profile tab"
-#~ msgid "Recent Orders"
-#~ msgstr "Últimos pedidos"
-
-#~ msgctxt "User profile tab"
-#~ msgid "Change password"
-#~ msgstr "Cambiar contraseña"
-
-#~ msgctxt "User profile tab"
-#~ msgid "Addresses book"
-#~ msgstr "Libro de direcciones"
-
-#~ msgctxt "Recent orders column title"
-#~ msgid "Order"
-#~ msgstr "Pedido"
-
-#~ msgctxt "Recent orders column title"
-#~ msgid "Date"
-#~ msgstr "Fecha"
-
-#~ msgctxt "Recent orders column title"
-#~ msgid "Summary"
-#~ msgstr "Resumen"
-
-#~ msgctxt "Recent orders column title"
-#~ msgid "Status"
-#~ msgstr "Estado"
-
-#~ msgctxt "Recent orders link text"
-#~ msgid "Details"
-#~ msgstr "Detalles"
-
-#~ msgctxt "No recent orders text"
-#~ msgid "There are not any completed orders yet."
-#~ msgstr "Aún no hay ningún pedido completado."
-
-#~ msgctxt "User profile action"
-#~ msgid "Change password"
-#~ msgstr "Cambiar contraseña"
-
-#~ msgctxt "User address action"
-#~ msgid "Edit"
-#~ msgstr "Editar"
-
-#~ msgctxt "No addresses text"
-#~ msgid "You will see new addresses here after first successful checkout."
-#~ msgstr "Verás nuevas direcciones aquí después del primer checkout exitoso."
-
-#~ msgctxt "Login page title"
-#~ msgid "Log in"
-#~ msgstr "Iniciar Sesión"
-
-#~ msgctxt "Login form secondary title"
-#~ msgid "Don't have an account yet?"
-#~ msgstr "¿Todavía no tenes una cuenta?"
-
-#~ msgctxt "Login form secondary action"
-#~ msgid "Register"
-#~ msgstr "Registrarse"
-
-#~ msgctxt "Login form title"
-#~ msgid "Log in"
-#~ msgstr "Iniciar Sesión"
-
-#~ msgctxt "Already logged in warning message"
-#~ msgid "You are already logged in as %(user)s."
-#~ msgstr "Has iniciado sesión como %(user)s"
-
-#~ msgctxt "Login form primary action"
-#~ msgid "Log in"
-#~ msgstr "Iniciar sesión"
-
-#~ msgctxt "Login form secondary link"
-#~ msgid "Forgot password?"
-#~ msgstr "¿Olvidaste tu contraseña?"
-
-#~ msgid "Facebook"
-#~ msgstr "Facebook"
-
-#~ msgid "Google"
-#~ msgstr "Google"
-
-#~ msgctxt "Password change breadcrumb"
-#~ msgid "Edit"
-#~ msgstr "Editar"
-
-#~ msgctxt "Password change form legend"
-#~ msgid "Change Password"
-#~ msgstr "Cambiar Contraseña"
-
-#~ msgctxt "Password change form primary action"
-#~ msgid "Save new password"
-#~ msgstr "Guardar nueva contraseña"
-
-#~ msgctxt "Password reset page title"
-#~ msgid "Password reset"
-#~ msgstr "Restaurar contraseña"
-
-#~ msgctxt "Password reset form title"
-#~ msgid "Forgot your password?"
-#~ msgstr "¿Olvidaste tu contraseña?"
-
-#~ msgctxt "Password reset form help text"
-#~ msgid ""
-#~ "Please let us know the email you have used to register or purchase at our "
-#~ "store."
-#~ msgstr ""
-#~ "Por favor indícanos cual es el correo electrónico que usaste para "
-#~ "registrarte o comprar en el sitio"
-
-#~ msgctxt "Password reset primary action"
-#~ msgid "Continue"
-#~ msgstr "Continuar"
-
-#~ msgctxt "Password reset done page title"
-#~ msgid "Password Reset"
-#~ msgstr "Restaurar Contraseña"
-
-#~ msgctxt "Password reset done title"
-#~ msgid "Password Reset"
-#~ msgstr "Restaurar Contraseña"
-
-#~ msgctxt "Password reset done text"
-#~ msgid ""
-#~ "We have sent you an e-mail. Please contact us if you do not receive it "
-#~ "within a few minutes."
-#~ msgstr ""
-#~ "Te hemos enviado un correo electrónico. Por favor contáctanos si no lo "
-#~ "has recibido dentro de unos pocos minutos."
-
-#~ msgctxt "Password reset from key page title"
-#~ msgid "Change Password"
-#~ msgstr "Cambiar Contraseña"
-
-#~ msgid "Bad Token"
-#~ msgstr "Token Equivocado"
-
-#~ msgctxt "Password reset text if key is invalid"
-#~ msgid ""
-#~ "The password reset link was invalid, possibly because it has already been "
-#~ "used.<br> Please request a <a href=\"%(passwd_reset_url)s\">new password "
-#~ "reset</a>."
-#~ msgstr ""
-#~ "El enlace de restauración de contraseña era inválido, seguramente porque "
-#~ "ya ha sido usado. <br> Por favor solicita un nuevo enlace en <a href="
-#~ "\"%(passwd_reset_url)s\"> nuevo reinicio de contraseña</a>."
-
-#~ msgctxt "Password reset from key form title"
-#~ msgid "Password Reset"
-#~ msgstr "Restaurar Contraseña"
-
-#~ msgctxt "Password reset from key form title"
-#~ msgid "Now you can set new password for you account."
-#~ msgstr "Ahora puedes ingresar una nueva contraseña para tu cuenta."
-
-#~ msgctxt "Password reset from key form primary action"
-#~ msgid "Continue"
-#~ msgstr "Continuar"
-
-#~ msgctxt "Password reset link expired from key form title"
-#~ msgid "Password Reset Link Expired"
-#~ msgstr "El enlace para restaurar la contraseña ha expirado."
-
-#~ msgctxt "Password reset from key form title"
-#~ msgid ""
-#~ "Sorry but this link is no longer valid. If you forget your password, "
-#~ "please use link below."
-#~ msgstr ""
-#~ "Lo sentimos, pero este enlace ya no es válido. Si olvidaste tu "
-#~ "contraseña, por favor utiliza el enlace de abajo."
-
-#~ msgctxt "Reset my password link"
-#~ msgid "Reset my password"
-#~ msgstr "Restaurar mi contraseña"
-
-#~ msgctxt "Password reset from key done page title"
-#~ msgid "Password Changed"
-#~ msgstr "Contraseña Cambiada"
-
-#~ msgctxt "Password reset from key done title"
-#~ msgid "Password Changed"
-#~ msgstr "Contraseña Cambiada"
-
-#~ msgid "Your password is now changed."
-#~ msgstr "Tu contraseña ha sido cambiada."
-
-#~ msgctxt "Password reset from key done text"
-#~ msgid ""
-#~ "You can now <a href=\"%(login_url)s\">sign in</a> using your new password"
-#~ msgstr ""
-#~ "Ahora podés <a href=\"%(login_url)s\">iniciar sesión</a> usando tu nueva "
-#~ "contraseña"
-
-#~ msgctxt "Signup page title"
-#~ msgid "Sign Up"
-#~ msgstr "Registrarse"
-
-#~ msgctxt "Signup form secondary title"
-#~ msgid "Already have an account?"
-#~ msgstr "¿Ya tienes una cuenta?"
-
-#~ msgctxt "Signup form secondary action"
-#~ msgid "Log in"
-#~ msgstr "Iniciar Sesión"
-
-#~ msgctxt "Signup form title"
-#~ msgid "Create an account"
-#~ msgstr "Crea una cuenta"
-
-#~ msgctxt "Signup form primary action"
-#~ msgid "Create an account"
-#~ msgstr "Crea una cuenta"
 
 #~ msgctxt "Main navigation item"
 #~ msgid "Your Cart"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 01:32-0500\n"
+"POT-Creation-Date: 2018-05-06 05:47-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Chung Hien Hoang <hoangchunghien@gmail.com>, 2018\n"
 "Language-Team: Vietnamese (https://www.transifex.com/mirumee/teams/34782/"
@@ -19,87 +19,87 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: conf/settings/base.py:253
+#: conf/settings/base.py:271
 msgid "Bulgarian"
 msgstr ""
 
-#: conf/settings/base.py:254
+#: conf/settings/base.py:272
 msgid "German"
 msgstr ""
 
-#: conf/settings/base.py:255
+#: conf/settings/base.py:273
 msgid "English"
 msgstr ""
 
-#: conf/settings/base.py:256
+#: conf/settings/base.py:274
 msgid "Spanish"
 msgstr ""
 
-#: conf/settings/base.py:257
+#: conf/settings/base.py:275
 msgid "Persian (Iran)"
 msgstr ""
 
-#: conf/settings/base.py:258
+#: conf/settings/base.py:276
 msgid "French"
 msgstr ""
 
-#: conf/settings/base.py:259
+#: conf/settings/base.py:277
 msgid "Hungarian"
 msgstr ""
 
-#: conf/settings/base.py:260
+#: conf/settings/base.py:278
 msgid "Italian"
 msgstr ""
 
-#: conf/settings/base.py:261
+#: conf/settings/base.py:279
 msgid "Japanese"
 msgstr ""
 
-#: conf/settings/base.py:262
+#: conf/settings/base.py:280
 msgid "Korean"
 msgstr ""
 
-#: conf/settings/base.py:263
+#: conf/settings/base.py:281
 msgid "Norwegian"
 msgstr ""
 
-#: conf/settings/base.py:264
+#: conf/settings/base.py:282
 msgid "Dutch"
 msgstr ""
 
-#: conf/settings/base.py:265
+#: conf/settings/base.py:283
 msgid "Polish"
 msgstr ""
 
-#: conf/settings/base.py:266
+#: conf/settings/base.py:284
 msgid "Portuguese (Brazil)"
 msgstr ""
 
-#: conf/settings/base.py:267
+#: conf/settings/base.py:285
 msgid "Romanian"
 msgstr ""
 
-#: conf/settings/base.py:268
+#: conf/settings/base.py:286
 msgid "Russian"
 msgstr ""
 
-#: conf/settings/base.py:269
+#: conf/settings/base.py:287
 msgid "Slovak"
 msgstr ""
 
-#: conf/settings/base.py:270
+#: conf/settings/base.py:288
 msgid "Turkish"
 msgstr ""
 
-#: conf/settings/base.py:271
+#: conf/settings/base.py:289
 msgid "Ukrainian"
 msgstr ""
 
-#: conf/settings/base.py:272
+#: conf/settings/base.py:290
 msgid "Vietnamese"
 msgstr ""
 
-#: conf/settings/base.py:273
+#: conf/settings/base.py:291
 msgid "Chinese"
 msgstr ""
 
@@ -113,42 +113,416 @@ msgctxt "Permission description"
 msgid "Can view site settings"
 msgstr ""
 
-#: templates/base.html:71
-msgctxt "Main navigation item"
-msgid "Dashboard"
+#: templates/account/address_delete.html:6
+#, fuzzy
+#| msgctxt "Address"
+#| msgid "Address"
+msgctxt "Remove address form action"
+msgid "Remove Address"
+msgstr "Địa chỉ"
+
+#: templates/account/address_delete.html:9
+msgctxt "Remove address form action"
+msgid "Cancel"
 msgstr ""
 
+#: templates/account/address_edit.html:7
+#, fuzzy
+#| msgctxt "Address"
+#| msgid "Address"
+msgctxt "Edit address page title"
+msgid "Edit address"
+msgstr "Địa chỉ"
+
+#: templates/account/address_edit.html:9
+#, fuzzy
+#| msgctxt "Address"
+#| msgid "Address"
+msgctxt "New address page title"
+msgid "New address"
+msgstr "Địa chỉ"
+
+#: templates/account/address_edit.html:16 templates/account/details.html:16
+#: templates/account/password_change.html:7
+msgctxt "Main navigation item"
+msgid "Home"
+msgstr ""
+
+#: templates/account/address_edit.html:21
+msgctxt "Edit/new address breadcrumb"
+msgid "Your profile"
+msgstr ""
+
+#: templates/account/address_edit.html:27
+#, fuzzy
+#| msgctxt "Address"
+#| msgid "Address"
+msgctxt "Edit address breadcrumb"
+msgid "Edit address"
+msgstr "Địa chỉ"
+
+#: templates/account/address_edit.html:33
+#, fuzzy
+#| msgctxt "Address"
+#| msgid "Address"
+msgctxt "New address breadcrumb"
+msgid "New address"
+msgstr "Địa chỉ"
+
+#: templates/account/address_edit.html:47
+#, fuzzy
+#| msgctxt "Address"
+#| msgid "Address"
+msgctxt "Edit address title"
+msgid "Edit address"
+msgstr "Địa chỉ"
+
+#: templates/account/address_edit.html:49
+#, fuzzy
+#| msgctxt "Address"
+#| msgid "Address"
+msgctxt "New address title"
+msgid "New address"
+msgstr "Địa chỉ"
+
+#: templates/account/address_edit.html:57
+msgctxt "Edit/new address primary action"
+msgid "Save changes"
+msgstr ""
+
+#: templates/account/details.html:10
+msgctxt "User profile page title"
+msgid "Your profile"
+msgstr ""
+
+#: templates/account/details.html:19 templates/account/password_change.html:8
 #: templates/base.html:77
 msgctxt "Main navigation item"
 msgid "Your account"
 msgstr ""
 
-#: templates/base.html:82
+#: templates/account/details.html:26
+msgid "My account"
+msgstr ""
+
+#: templates/account/details.html:30
+msgctxt "User profile tab"
+msgid "Recent Orders"
+msgstr ""
+
+#: templates/account/details.html:36
+#, fuzzy
+#| msgctxt "Password"
+#| msgid "Password"
+msgctxt "User profile tab"
+msgid "Change password"
+msgstr "Mật khẩu"
+
+#: templates/account/details.html:42
+#, fuzzy
+#| msgctxt "Address"
+#| msgid "Address"
+msgctxt "User profile tab"
+msgid "Addresses book"
+msgstr "Địa chỉ"
+
+#: templates/account/details.html:54
+msgctxt "Recent orders column title"
+msgid "Order"
+msgstr ""
+
+#: templates/account/details.html:57
+msgctxt "Recent orders column title"
+msgid "Date"
+msgstr ""
+
+#: templates/account/details.html:60
+msgctxt "Recent orders column title"
+msgid "Summary"
+msgstr ""
+
+#: templates/account/details.html:63
+msgctxt "Recent orders column title"
+msgid "Status"
+msgstr ""
+
+#: templates/account/details.html:85
+msgctxt "Recent orders link text"
+msgid "Details"
+msgstr ""
+
+#: templates/account/details.html:100
+msgctxt "No recent orders text"
+msgid "There are not any completed orders yet."
+msgstr ""
+
+#: templates/account/details.html:111
+#, fuzzy
+#| msgctxt "Password"
+#| msgid "Password"
+msgctxt "User profile action"
+msgid "Change password"
+msgstr "Mật khẩu"
+
+#: templates/account/details.html:126
+msgctxt "User address action"
+msgid "Edit"
+msgstr ""
+
+#: templates/account/details.html:142
+msgctxt "No addresses text"
+msgid "You will see new addresses here after first successful checkout."
+msgstr ""
+
+#: templates/account/login.html:5 templates/registration/login.html:5
+msgctxt "Login page title"
+msgid "Log in"
+msgstr ""
+
+#: templates/account/login.html:16 templates/registration/login.html:16
+msgctxt "Login form secondary title"
+msgid "Don't have an account yet?"
+msgstr ""
+
+#: templates/account/login.html:21 templates/registration/login.html:21
+msgctxt "Login form secondary action"
+msgid "Register"
+msgstr ""
+
+#: templates/account/login.html:26 templates/registration/login.html:26
+msgctxt "Login form title"
+msgid "Log in"
+msgstr ""
+
+#: templates/account/partials/already_logged_in.html:5
+#, python-format
+msgctxt "Already logged in warning message"
+msgid "You are already logged in as %(user)s."
+msgstr ""
+
+#: templates/account/partials/login_form.html:16
+msgctxt "Login form primary action"
+msgid "Log in"
+msgstr ""
+
+#: templates/account/partials/login_form.html:19
+msgctxt "Login form secondary link"
+msgid "Forgot password?"
+msgstr ""
+
+#: templates/account/partials/login_form.html:29
+msgid "Facebook"
+msgstr ""
+
+#: templates/account/partials/login_form.html:37
+msgid "Google"
+msgstr ""
+
+#: templates/account/password_change.html:9
+msgctxt "Password change breadcrumb"
+msgid "Edit"
+msgstr ""
+
+#: templates/account/password_change.html:22
+#, fuzzy
+#| msgctxt "Password"
+#| msgid "Password"
+msgctxt "Password change form legend"
+msgid "Change Password"
+msgstr "Mật khẩu"
+
+#: templates/account/password_change.html:28
+msgctxt "Password change form primary action"
+msgid "Save new password"
+msgstr ""
+
+#: templates/account/password_reset.html:6
+#, fuzzy
+#| msgctxt "Password"
+#| msgid "Password"
+msgctxt "Password reset page title"
+msgid "Password reset"
+msgstr "Mật khẩu"
+
+#: templates/account/password_reset.html:17
+msgctxt "Password reset form title"
+msgid "Forgot your password?"
+msgstr ""
+
+#: templates/account/password_reset.html:19
+msgctxt "Password reset form help text"
+msgid ""
+"Please let us know the email you have used to register or purchase at our "
+"store."
+msgstr ""
+
+#: templates/account/password_reset.html:30
+msgctxt "Password reset primary action"
+msgid "Continue"
+msgstr ""
+
+#: templates/account/password_reset_done.html:6
+#, fuzzy
+#| msgctxt "Password"
+#| msgid "Password"
+msgctxt "Password reset done page title"
+msgid "Password Reset"
+msgstr "Mật khẩu"
+
+#: templates/account/password_reset_done.html:10
+#, fuzzy
+#| msgctxt "Password"
+#| msgid "Password"
+msgctxt "Password reset done title"
+msgid "Password Reset"
+msgstr "Mật khẩu"
+
+#: templates/account/password_reset_done.html:14
+msgctxt "Password reset done text"
+msgid ""
+"We have sent you an e-mail. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+
+#: templates/account/password_reset_from_key.html:6
+#, fuzzy
+#| msgctxt "Password"
+#| msgid "Password"
+msgctxt "Password reset from key page title"
+msgid "Change Password"
+msgstr "Mật khẩu"
+
+#: templates/account/password_reset_from_key.html:11
+msgid "Bad Token"
+msgstr ""
+
+#: templates/account/password_reset_from_key.html:13
+#, python-format
+msgctxt "Password reset text if key is invalid"
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.<br> Please request a <a href=\"%(passwd_reset_url)s\">new password "
+"reset</a>."
+msgstr ""
+
+#: templates/account/password_reset_from_key.html:24
+#, fuzzy
+#| msgctxt "Password"
+#| msgid "Password"
+msgctxt "Password reset from key form title"
+msgid "Password Reset"
+msgstr "Mật khẩu"
+
+#: templates/account/password_reset_from_key.html:25
+msgctxt "Password reset from key form title"
+msgid "Now you can set new password for you account."
+msgstr ""
+
+#: templates/account/password_reset_from_key.html:32
+msgctxt "Password reset from key form primary action"
+msgid "Continue"
+msgstr ""
+
+#: templates/account/password_reset_from_key.html:39
+msgctxt "Password reset link expired from key form title"
+msgid "Password Reset Link Expired"
+msgstr ""
+
+#: templates/account/password_reset_from_key.html:40
+msgctxt "Password reset from key form title"
+msgid ""
+"Sorry but this link is no longer valid. If you forget your password, please "
+"use link below."
+msgstr ""
+
+#: templates/account/password_reset_from_key.html:42
+msgctxt "Reset my password link"
+msgid "Reset my password"
+msgstr ""
+
+#: templates/account/password_reset_from_key_done.html:4
+#, fuzzy
+#| msgctxt "Password"
+#| msgid "Password"
+msgctxt "Password reset from key done page title"
+msgid "Password Changed"
+msgstr "Mật khẩu"
+
+#: templates/account/password_reset_from_key_done.html:7
+#, fuzzy
+#| msgctxt "Password"
+#| msgid "Password"
+msgctxt "Password reset from key done title"
+msgid "Password Changed"
+msgstr "Mật khẩu"
+
+#: templates/account/password_reset_from_key_done.html:9
+msgid "Your password is now changed."
+msgstr ""
+
+#: templates/account/password_reset_from_key_done.html:10
+#, python-format
+msgctxt "Password reset from key done text"
+msgid ""
+"You can now <a href=\"%(login_url)s\">sign in</a> using your new password"
+msgstr ""
+
+#: templates/account/signup.html:6
+msgctxt "Signup page title"
+msgid "Sign Up"
+msgstr ""
+
+#: templates/account/signup.html:17
+msgctxt "Signup form secondary title"
+msgid "Already have an account?"
+msgstr ""
+
+#: templates/account/signup.html:21
+msgctxt "Signup form secondary action"
+msgid "Log in"
+msgstr ""
+
+#: templates/account/signup.html:28
+msgctxt "Signup form title"
+msgid "Create an account"
+msgstr ""
+
+#: templates/account/signup.html:36
+msgctxt "Signup form primary action"
+msgid "Create an account"
+msgstr ""
+
+#: templates/base.html:71
+msgctxt "Main navigation item"
+msgid "Dashboard"
+msgstr ""
+
+#: templates/base.html:83
 msgctxt "Main navigation item"
 msgid "Stop impersonating"
 msgstr ""
 
-#: templates/base.html:88 templates/base.html:231
+#: templates/base.html:89 templates/base.html:232
 msgctxt "Main navigation item"
 msgid "Log out"
 msgstr ""
 
-#: templates/base.html:94 templates/base.html:237
+#: templates/base.html:95 templates/base.html:238
 msgctxt "Main navigation item"
 msgid "Register"
 msgstr ""
 
-#: templates/base.html:98 templates/base.html:242
+#: templates/base.html:99 templates/base.html:243
 msgctxt "Main navigation item"
 msgid "Log in"
 msgstr ""
 
-#: templates/base.html:113
+#: templates/base.html:114
 msgctxt "Hamburger button text"
 msgid "menu"
 msgstr ""
 
-#: templates/base.html:130
+#: templates/base.html:131
 msgid "Search for product"
 msgstr ""
 
@@ -190,10 +564,6 @@ msgstr ""
 #~ msgid "Email"
 #~ msgstr "Thư điện thử"
 
-#~ msgctxt "Password"
-#~ msgid "Password"
-#~ msgstr "Mật khẩu"
-
 #~ msgctxt "Address field"
 #~ msgid "Area"
 #~ msgstr "Vùng"
@@ -225,10 +595,6 @@ msgstr ""
 #~ msgctxt "Company or organization"
 #~ msgid "Company or organization"
 #~ msgstr "Công ty hoặc tổ chức"
-
-#~ msgctxt "Address"
-#~ msgid "Address"
-#~ msgstr "Địa chỉ"
 
 #~ msgctxt "City"
 #~ msgid "City"

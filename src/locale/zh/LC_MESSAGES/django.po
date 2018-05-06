@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 01:32-0500\n"
+"POT-Creation-Date: 2018-05-06 05:47-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: ax003d <ax003d@gmail.com>, 2017\n"
 "Language-Team: Chinese (https://www.transifex.com/mirumee/teams/34782/zh/)\n"
@@ -18,94 +18,94 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: conf/settings/base.py:253
+#: conf/settings/base.py:271
 #, fuzzy
 #| msgid "Variant"
 msgid "Bulgarian"
 msgstr "变种"
 
-#: conf/settings/base.py:254
+#: conf/settings/base.py:272
 msgid "German"
 msgstr ""
 
-#: conf/settings/base.py:255
+#: conf/settings/base.py:273
 msgid "English"
 msgstr ""
 
-#: conf/settings/base.py:256
+#: conf/settings/base.py:274
 msgid "Spanish"
 msgstr ""
 
-#: conf/settings/base.py:257
+#: conf/settings/base.py:275
 msgid "Persian (Iran)"
 msgstr ""
 
-#: conf/settings/base.py:258
+#: conf/settings/base.py:276
 msgid "French"
 msgstr ""
 
-#: conf/settings/base.py:259
+#: conf/settings/base.py:277
 #, fuzzy
 #| msgid "Variant"
 msgid "Hungarian"
 msgstr "变种"
 
-#: conf/settings/base.py:260
+#: conf/settings/base.py:278
 msgid "Italian"
 msgstr ""
 
-#: conf/settings/base.py:261
+#: conf/settings/base.py:279
 msgid "Japanese"
 msgstr ""
 
-#: conf/settings/base.py:262
+#: conf/settings/base.py:280
 msgid "Korean"
 msgstr ""
 
-#: conf/settings/base.py:263
+#: conf/settings/base.py:281
 msgid "Norwegian"
 msgstr ""
 
-#: conf/settings/base.py:264
+#: conf/settings/base.py:282
 msgid "Dutch"
 msgstr ""
 
-#: conf/settings/base.py:265
+#: conf/settings/base.py:283
 #, fuzzy
 #| msgctxt "Page availability status"
 #| msgid "Published"
 msgid "Polish"
 msgstr "已发布"
 
-#: conf/settings/base.py:266
+#: conf/settings/base.py:284
 msgid "Portuguese (Brazil)"
 msgstr ""
 
-#: conf/settings/base.py:267
+#: conf/settings/base.py:285
 msgid "Romanian"
 msgstr ""
 
-#: conf/settings/base.py:268
+#: conf/settings/base.py:286
 msgid "Russian"
 msgstr ""
 
-#: conf/settings/base.py:269
+#: conf/settings/base.py:287
 msgid "Slovak"
 msgstr ""
 
-#: conf/settings/base.py:270
+#: conf/settings/base.py:288
 msgid "Turkish"
 msgstr ""
 
-#: conf/settings/base.py:271
+#: conf/settings/base.py:289
 msgid "Ukrainian"
 msgstr ""
 
-#: conf/settings/base.py:272
+#: conf/settings/base.py:290
 msgid "Vietnamese"
 msgstr ""
 
-#: conf/settings/base.py:273
+#: conf/settings/base.py:291
 msgid "Chinese"
 msgstr ""
 
@@ -119,42 +119,364 @@ msgctxt "Permission description"
 msgid "Can view site settings"
 msgstr "可以查看站点配置"
 
-#: templates/base.html:71
-msgctxt "Main navigation item"
-msgid "Dashboard"
-msgstr "后台"
+#: templates/account/address_delete.html:6
+msgctxt "Remove address form action"
+msgid "Remove Address"
+msgstr "删除地址"
 
+#: templates/account/address_delete.html:9
+msgctxt "Remove address form action"
+msgid "Cancel"
+msgstr "取消"
+
+#: templates/account/address_edit.html:7
+msgctxt "Edit address page title"
+msgid "Edit address"
+msgstr "编辑地址"
+
+#: templates/account/address_edit.html:9
+msgctxt "New address page title"
+msgid "New address"
+msgstr "新增地址"
+
+#: templates/account/address_edit.html:16 templates/account/details.html:16
+#: templates/account/password_change.html:7
+msgctxt "Main navigation item"
+msgid "Home"
+msgstr "首页"
+
+#: templates/account/address_edit.html:21
+msgctxt "Edit/new address breadcrumb"
+msgid "Your profile"
+msgstr "您的简介"
+
+#: templates/account/address_edit.html:27
+msgctxt "Edit address breadcrumb"
+msgid "Edit address"
+msgstr "编辑地址"
+
+#: templates/account/address_edit.html:33
+msgctxt "New address breadcrumb"
+msgid "New address"
+msgstr "新增地址"
+
+#: templates/account/address_edit.html:47
+msgctxt "Edit address title"
+msgid "Edit address"
+msgstr "编辑地址"
+
+#: templates/account/address_edit.html:49
+msgctxt "New address title"
+msgid "New address"
+msgstr "新增地址"
+
+#: templates/account/address_edit.html:57
+msgctxt "Edit/new address primary action"
+msgid "Save changes"
+msgstr "保存变更"
+
+#: templates/account/details.html:10
+msgctxt "User profile page title"
+msgid "Your profile"
+msgstr "您的简介"
+
+#: templates/account/details.html:19 templates/account/password_change.html:8
 #: templates/base.html:77
 msgctxt "Main navigation item"
 msgid "Your account"
 msgstr "您的账号"
 
-#: templates/base.html:82
+#: templates/account/details.html:26
+msgid "My account"
+msgstr "我的账号"
+
+#: templates/account/details.html:30
+msgctxt "User profile tab"
+msgid "Recent Orders"
+msgstr "最近订单"
+
+#: templates/account/details.html:36
+msgctxt "User profile tab"
+msgid "Change password"
+msgstr "修改密码"
+
+#: templates/account/details.html:42
+msgctxt "User profile tab"
+msgid "Addresses book"
+msgstr "地址薄"
+
+#: templates/account/details.html:54
+msgctxt "Recent orders column title"
+msgid "Order"
+msgstr "订单"
+
+#: templates/account/details.html:57
+msgctxt "Recent orders column title"
+msgid "Date"
+msgstr "日期"
+
+#: templates/account/details.html:60
+msgctxt "Recent orders column title"
+msgid "Summary"
+msgstr "摘要"
+
+#: templates/account/details.html:63
+msgctxt "Recent orders column title"
+msgid "Status"
+msgstr "状态"
+
+#: templates/account/details.html:85
+msgctxt "Recent orders link text"
+msgid "Details"
+msgstr "详情"
+
+#: templates/account/details.html:100
+msgctxt "No recent orders text"
+msgid "There are not any completed orders yet."
+msgstr "还没有完成的订单"
+
+#: templates/account/details.html:111
+msgctxt "User profile action"
+msgid "Change password"
+msgstr "修改密码"
+
+#: templates/account/details.html:126
+msgctxt "User address action"
+msgid "Edit"
+msgstr "编辑"
+
+#: templates/account/details.html:142
+msgctxt "No addresses text"
+msgid "You will see new addresses here after first successful checkout."
+msgstr ""
+
+#: templates/account/login.html:5 templates/registration/login.html:5
+msgctxt "Login page title"
+msgid "Log in"
+msgstr "登录"
+
+#: templates/account/login.html:16 templates/registration/login.html:16
+msgctxt "Login form secondary title"
+msgid "Don't have an account yet?"
+msgstr "还没拥有账号？"
+
+#: templates/account/login.html:21 templates/registration/login.html:21
+msgctxt "Login form secondary action"
+msgid "Register"
+msgstr "注册"
+
+#: templates/account/login.html:26 templates/registration/login.html:26
+msgctxt "Login form title"
+msgid "Log in"
+msgstr "登录"
+
+#: templates/account/partials/already_logged_in.html:5
+#, python-format
+msgctxt "Already logged in warning message"
+msgid "You are already logged in as %(user)s."
+msgstr "您已登录，%(user)s。"
+
+#: templates/account/partials/login_form.html:16
+msgctxt "Login form primary action"
+msgid "Log in"
+msgstr "登录"
+
+#: templates/account/partials/login_form.html:19
+msgctxt "Login form secondary link"
+msgid "Forgot password?"
+msgstr "忘记密码？"
+
+#: templates/account/partials/login_form.html:29
+msgid "Facebook"
+msgstr ""
+
+#: templates/account/partials/login_form.html:37
+msgid "Google"
+msgstr ""
+
+#: templates/account/password_change.html:9
+msgctxt "Password change breadcrumb"
+msgid "Edit"
+msgstr "编辑"
+
+#: templates/account/password_change.html:22
+msgctxt "Password change form legend"
+msgid "Change Password"
+msgstr "修改密码"
+
+#: templates/account/password_change.html:28
+msgctxt "Password change form primary action"
+msgid "Save new password"
+msgstr "保存新密码"
+
+#: templates/account/password_reset.html:6
+msgctxt "Password reset page title"
+msgid "Password reset"
+msgstr "重置密码"
+
+#: templates/account/password_reset.html:17
+msgctxt "Password reset form title"
+msgid "Forgot your password?"
+msgstr "忘记密码？"
+
+#: templates/account/password_reset.html:19
+msgctxt "Password reset form help text"
+msgid ""
+"Please let us know the email you have used to register or purchase at our "
+"store."
+msgstr "请让我们知道您用于注册和购物的电子邮件。"
+
+#: templates/account/password_reset.html:30
+msgctxt "Password reset primary action"
+msgid "Continue"
+msgstr "继续"
+
+#: templates/account/password_reset_done.html:6
+msgctxt "Password reset done page title"
+msgid "Password Reset"
+msgstr "重置密码"
+
+#: templates/account/password_reset_done.html:10
+msgctxt "Password reset done title"
+msgid "Password Reset"
+msgstr "重置密码"
+
+#: templates/account/password_reset_done.html:14
+msgctxt "Password reset done text"
+msgid ""
+"We have sent you an e-mail. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr "我们给您发送了一封电子邮件。如果几分钟内还没有收到，请联系我们。"
+
+#: templates/account/password_reset_from_key.html:6
+msgctxt "Password reset from key page title"
+msgid "Change Password"
+msgstr "修改密码"
+
+#: templates/account/password_reset_from_key.html:11
+msgid "Bad Token"
+msgstr ""
+
+#: templates/account/password_reset_from_key.html:13
+#, python-format
+msgctxt "Password reset text if key is invalid"
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.<br> Please request a <a href=\"%(passwd_reset_url)s\">new password "
+"reset</a>."
+msgstr ""
+"重置密码链接失效，可能它已经被使用过了。<br>您可以再次请求一次<a href="
+"\"%(passwd_reset_url)s\">密码重置</a>。"
+
+#: templates/account/password_reset_from_key.html:24
+msgctxt "Password reset from key form title"
+msgid "Password Reset"
+msgstr "重置密码"
+
+#: templates/account/password_reset_from_key.html:25
+msgctxt "Password reset from key form title"
+msgid "Now you can set new password for you account."
+msgstr "现在您可以为您的账号设置新密码"
+
+#: templates/account/password_reset_from_key.html:32
+msgctxt "Password reset from key form primary action"
+msgid "Continue"
+msgstr "继续"
+
+#: templates/account/password_reset_from_key.html:39
+msgctxt "Password reset link expired from key form title"
+msgid "Password Reset Link Expired"
+msgstr "重置密码链接已过期"
+
+#: templates/account/password_reset_from_key.html:40
+msgctxt "Password reset from key form title"
+msgid ""
+"Sorry but this link is no longer valid. If you forget your password, please "
+"use link below."
+msgstr "这个链接已失效。如果您忘记了密码，请点击如下链接。"
+
+#: templates/account/password_reset_from_key.html:42
+msgctxt "Reset my password link"
+msgid "Reset my password"
+msgstr "重置密码"
+
+#: templates/account/password_reset_from_key_done.html:4
+msgctxt "Password reset from key done page title"
+msgid "Password Changed"
+msgstr "密码已更新"
+
+#: templates/account/password_reset_from_key_done.html:7
+msgctxt "Password reset from key done title"
+msgid "Password Changed"
+msgstr "密码已更新"
+
+#: templates/account/password_reset_from_key_done.html:9
+msgid "Your password is now changed."
+msgstr "您的密码已更新"
+
+#: templates/account/password_reset_from_key_done.html:10
+#, python-format
+msgctxt "Password reset from key done text"
+msgid ""
+"You can now <a href=\"%(login_url)s\">sign in</a> using your new password"
+msgstr "您现在可以用您的新密码<a href=\"%(login_url)s\"> 登录</a>"
+
+#: templates/account/signup.html:6
+msgctxt "Signup page title"
+msgid "Sign Up"
+msgstr "注册"
+
+#: templates/account/signup.html:17
+msgctxt "Signup form secondary title"
+msgid "Already have an account?"
+msgstr "已有账号？"
+
+#: templates/account/signup.html:21
+msgctxt "Signup form secondary action"
+msgid "Log in"
+msgstr "登录"
+
+#: templates/account/signup.html:28
+msgctxt "Signup form title"
+msgid "Create an account"
+msgstr "创建账号"
+
+#: templates/account/signup.html:36
+msgctxt "Signup form primary action"
+msgid "Create an account"
+msgstr "创建账号"
+
+#: templates/base.html:71
+msgctxt "Main navigation item"
+msgid "Dashboard"
+msgstr "后台"
+
+#: templates/base.html:83
 msgctxt "Main navigation item"
 msgid "Stop impersonating"
 msgstr ""
 
-#: templates/base.html:88 templates/base.html:231
+#: templates/base.html:89 templates/base.html:232
 msgctxt "Main navigation item"
 msgid "Log out"
 msgstr "登出"
 
-#: templates/base.html:94 templates/base.html:237
+#: templates/base.html:95 templates/base.html:238
 msgctxt "Main navigation item"
 msgid "Register"
 msgstr "注册"
 
-#: templates/base.html:98 templates/base.html:242
+#: templates/base.html:99 templates/base.html:243
 msgctxt "Main navigation item"
 msgid "Log in"
 msgstr "登录"
 
-#: templates/base.html:113
+#: templates/base.html:114
 msgctxt "Hamburger button text"
 msgid "menu"
 msgstr "菜单"
 
-#: templates/base.html:130
+#: templates/base.html:131
 msgid "Search for product"
 msgstr "搜索产品"
 
@@ -443,248 +765,6 @@ msgstr "主打产品"
 #~ msgctxt "Sale (discount) label for item in product list"
 #~ msgid "Sale"
 #~ msgstr "销售"
-
-#~ msgctxt "Remove address form action"
-#~ msgid "Remove Address"
-#~ msgstr "删除地址"
-
-#~ msgctxt "Remove address form action"
-#~ msgid "Cancel"
-#~ msgstr "取消"
-
-#~ msgctxt "Edit address page title"
-#~ msgid "Edit address"
-#~ msgstr "编辑地址"
-
-#~ msgctxt "New address page title"
-#~ msgid "New address"
-#~ msgstr "新增地址"
-
-#~ msgctxt "Main navigation item"
-#~ msgid "Home"
-#~ msgstr "首页"
-
-#~ msgctxt "Edit/new address breadcrumb"
-#~ msgid "Your profile"
-#~ msgstr "您的简介"
-
-#~ msgctxt "Edit address breadcrumb"
-#~ msgid "Edit address"
-#~ msgstr "编辑地址"
-
-#~ msgctxt "New address breadcrumb"
-#~ msgid "New address"
-#~ msgstr "新增地址"
-
-#~ msgctxt "Edit address title"
-#~ msgid "Edit address"
-#~ msgstr "编辑地址"
-
-#~ msgctxt "New address title"
-#~ msgid "New address"
-#~ msgstr "新增地址"
-
-#~ msgctxt "Edit/new address primary action"
-#~ msgid "Save changes"
-#~ msgstr "保存变更"
-
-#~ msgctxt "User profile page title"
-#~ msgid "Your profile"
-#~ msgstr "您的简介"
-
-#~ msgid "My account"
-#~ msgstr "我的账号"
-
-#~ msgctxt "User profile tab"
-#~ msgid "Recent Orders"
-#~ msgstr "最近订单"
-
-#~ msgctxt "User profile tab"
-#~ msgid "Change password"
-#~ msgstr "修改密码"
-
-#~ msgctxt "User profile tab"
-#~ msgid "Addresses book"
-#~ msgstr "地址薄"
-
-#~ msgctxt "Recent orders column title"
-#~ msgid "Order"
-#~ msgstr "订单"
-
-#~ msgctxt "Recent orders column title"
-#~ msgid "Date"
-#~ msgstr "日期"
-
-#~ msgctxt "Recent orders column title"
-#~ msgid "Summary"
-#~ msgstr "摘要"
-
-#~ msgctxt "Recent orders column title"
-#~ msgid "Status"
-#~ msgstr "状态"
-
-#~ msgctxt "Recent orders link text"
-#~ msgid "Details"
-#~ msgstr "详情"
-
-#~ msgctxt "No recent orders text"
-#~ msgid "There are not any completed orders yet."
-#~ msgstr "还没有完成的订单"
-
-#~ msgctxt "User profile action"
-#~ msgid "Change password"
-#~ msgstr "修改密码"
-
-#~ msgctxt "User address action"
-#~ msgid "Edit"
-#~ msgstr "编辑"
-
-#~ msgctxt "Login page title"
-#~ msgid "Log in"
-#~ msgstr "登录"
-
-#~ msgctxt "Login form secondary title"
-#~ msgid "Don't have an account yet?"
-#~ msgstr "还没拥有账号？"
-
-#~ msgctxt "Login form secondary action"
-#~ msgid "Register"
-#~ msgstr "注册"
-
-#~ msgctxt "Login form title"
-#~ msgid "Log in"
-#~ msgstr "登录"
-
-#~ msgctxt "Already logged in warning message"
-#~ msgid "You are already logged in as %(user)s."
-#~ msgstr "您已登录，%(user)s。"
-
-#~ msgctxt "Login form primary action"
-#~ msgid "Log in"
-#~ msgstr "登录"
-
-#~ msgctxt "Login form secondary link"
-#~ msgid "Forgot password?"
-#~ msgstr "忘记密码？"
-
-#~ msgctxt "Password change breadcrumb"
-#~ msgid "Edit"
-#~ msgstr "编辑"
-
-#~ msgctxt "Password change form legend"
-#~ msgid "Change Password"
-#~ msgstr "修改密码"
-
-#~ msgctxt "Password change form primary action"
-#~ msgid "Save new password"
-#~ msgstr "保存新密码"
-
-#~ msgctxt "Password reset page title"
-#~ msgid "Password reset"
-#~ msgstr "重置密码"
-
-#~ msgctxt "Password reset form title"
-#~ msgid "Forgot your password?"
-#~ msgstr "忘记密码？"
-
-#~ msgctxt "Password reset form help text"
-#~ msgid ""
-#~ "Please let us know the email you have used to register or purchase at our "
-#~ "store."
-#~ msgstr "请让我们知道您用于注册和购物的电子邮件。"
-
-#~ msgctxt "Password reset primary action"
-#~ msgid "Continue"
-#~ msgstr "继续"
-
-#~ msgctxt "Password reset done page title"
-#~ msgid "Password Reset"
-#~ msgstr "重置密码"
-
-#~ msgctxt "Password reset done title"
-#~ msgid "Password Reset"
-#~ msgstr "重置密码"
-
-#~ msgctxt "Password reset done text"
-#~ msgid ""
-#~ "We have sent you an e-mail. Please contact us if you do not receive it "
-#~ "within a few minutes."
-#~ msgstr "我们给您发送了一封电子邮件。如果几分钟内还没有收到，请联系我们。"
-
-#~ msgctxt "Password reset from key page title"
-#~ msgid "Change Password"
-#~ msgstr "修改密码"
-
-#~ msgctxt "Password reset text if key is invalid"
-#~ msgid ""
-#~ "The password reset link was invalid, possibly because it has already been "
-#~ "used.<br> Please request a <a href=\"%(passwd_reset_url)s\">new password "
-#~ "reset</a>."
-#~ msgstr ""
-#~ "重置密码链接失效，可能它已经被使用过了。<br>您可以再次请求一次<a href="
-#~ "\"%(passwd_reset_url)s\">密码重置</a>。"
-
-#~ msgctxt "Password reset from key form title"
-#~ msgid "Password Reset"
-#~ msgstr "重置密码"
-
-#~ msgctxt "Password reset from key form title"
-#~ msgid "Now you can set new password for you account."
-#~ msgstr "现在您可以为您的账号设置新密码"
-
-#~ msgctxt "Password reset from key form primary action"
-#~ msgid "Continue"
-#~ msgstr "继续"
-
-#~ msgctxt "Password reset link expired from key form title"
-#~ msgid "Password Reset Link Expired"
-#~ msgstr "重置密码链接已过期"
-
-#~ msgctxt "Password reset from key form title"
-#~ msgid ""
-#~ "Sorry but this link is no longer valid. If you forget your password, "
-#~ "please use link below."
-#~ msgstr "这个链接已失效。如果您忘记了密码，请点击如下链接。"
-
-#~ msgctxt "Reset my password link"
-#~ msgid "Reset my password"
-#~ msgstr "重置密码"
-
-#~ msgctxt "Password reset from key done page title"
-#~ msgid "Password Changed"
-#~ msgstr "密码已更新"
-
-#~ msgctxt "Password reset from key done title"
-#~ msgid "Password Changed"
-#~ msgstr "密码已更新"
-
-#~ msgid "Your password is now changed."
-#~ msgstr "您的密码已更新"
-
-#~ msgctxt "Password reset from key done text"
-#~ msgid ""
-#~ "You can now <a href=\"%(login_url)s\">sign in</a> using your new password"
-#~ msgstr "您现在可以用您的新密码<a href=\"%(login_url)s\"> 登录</a>"
-
-#~ msgctxt "Signup page title"
-#~ msgid "Sign Up"
-#~ msgstr "注册"
-
-#~ msgctxt "Signup form secondary title"
-#~ msgid "Already have an account?"
-#~ msgstr "已有账号？"
-
-#~ msgctxt "Signup form secondary action"
-#~ msgid "Log in"
-#~ msgstr "登录"
-
-#~ msgctxt "Signup form title"
-#~ msgid "Create an account"
-#~ msgstr "创建账号"
-
-#~ msgctxt "Signup form primary action"
-#~ msgid "Create an account"
-#~ msgstr "创建账号"
 
 #~ msgctxt "Main navigation item"
 #~ msgid "Your Cart"
