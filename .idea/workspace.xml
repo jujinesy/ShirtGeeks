@@ -1,30 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d1630cc-ae4d-40e5-817c-d6a8876a7597" name="Default" comment=".">
+    <list default="true" id="5d1630cc-ae4d-40e5-817c-d6a8876a7597" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/locale/bg/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/bg/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/bg_BG/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/bg_BG/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/de/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/de/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/en/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/en/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/es/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/es/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/fa_IR/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/fa_IR/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/fr/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/fr/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/hu/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/hu/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/it/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/it/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/ja/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/ja/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/ko/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/ko/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/nb/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/nb/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/nl/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/nl/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/pl/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/pl/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/pt_BR/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/pt_BR/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/ro/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/ro/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/ru/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/ru/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/sk/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/sk/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/tr/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/tr/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/uk/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/uk/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/vi/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/vi/LC_MESSAGES/django.po" />
-      <change beforePath="$PROJECT_DIR$/src/locale/zh/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/src/locale/zh/LC_MESSAGES/django.po" />
+      <change beforePath="$PROJECT_DIR$/src/db.sqlite3" afterPath="$PROJECT_DIR$/src/db.sqlite3" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -457,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1525603876640</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary=".">
+      <created>1525648601033</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1525648601033</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView">
@@ -474,10 +460,10 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290993" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28556806" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28556806" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290993" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290993" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3285568" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285568" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21550672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
