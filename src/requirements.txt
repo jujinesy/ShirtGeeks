@@ -30,3 +30,4 @@ requests==2.18.4
 typing==3.6.4
 urllib3==1.22
 Whoosh==2.7.4
+pip==9.0.3
