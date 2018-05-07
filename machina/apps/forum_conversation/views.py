@@ -292,7 +292,6 @@ class BasePostFormView(FormView):
                             else form.instance.filename
                         ))
                 context['attachment_file_previews'] = attachments
-
         return context
 
     def get_forum(self):

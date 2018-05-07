@@ -1,5 +1,7 @@
+import os
 from django import template
 from django.conf import settings
+
 
 register = template.Library()
 
@@ -20,7 +22,11 @@ def do_assign(parser, token):
     value = parser.compile_filter(bits[2])
     return AssignNode(bits[1], value)
 
-
+@register.assignment_tag
+def do_image_filter(arg):
+    if os.path.splitext(arg)[1] in ('.jpg', '.jpge', '.png'):
+        return True
+    return  False
 
 # Your template:
 # {% load custom_tags %}

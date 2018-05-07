@@ -1,5 +1,6 @@
 {% load i18n %}
 {% load forum_permission_tags %}
+{% load custom_tags %}
 
 {% get_permission 'can_download_files' post.topic.forum request.user as user_can_download_files %}
 {% if post.attachments.exists and user_can_download_files %}
@@ -10,7 +11,10 @@
         {% for attachment in post.attachments.all %}
             <div class="col-md-12 attachment">
                 <a href="{% url 'forum_conversation:attachment' pk=attachment.id %}"><i class="fa fa-file"></i>&nbsp;{{ attachment.filename }} ({{ attachment.file.size|filesizeformat }})</a>
-                <img style='height: 100%; width: 100%; object-fit: contain' src="{% url 'forum_conversation:attachment' pk=attachment.id %}">
+                {% do_image_filter attachment.filename as result %}
+                {% if result %}
+                    <img style='height: 100%; width: 100%; object-fit: contain' src="{% url 'forum_conversation:attachment' pk=attachment.id %}">
+                {% endif %}
                 {% if attachment.comment %}
                     <p class="text-muted"><em>{{ attachment.comment }}</em></p>
                 {% endif %}

@@ -61,7 +61,7 @@ SITE_ID = 1
 
 ALLOWED_HOSTS = []
 
-AUTO_CONFIRM = False
+AUTO_EMAIL_CONFIRM = True
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'

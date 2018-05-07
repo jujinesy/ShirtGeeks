@@ -4,7 +4,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-AUTO_CONFIRM = False
+AUTO_EMAIL_CONFIRM = True
 HOSTS_NAME = 'http://127.0.0.1:7999'
 #HOSTS_NAME = 'http://10.211.55.7'
 

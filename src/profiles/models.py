@@ -49,7 +49,7 @@ class Profile(models.Model):
             recipient_list = [self.user.email]
             html_message = f'<p>Activate your account here: {full_path}</p>'
             print(html_message)
-            if settings.AUTO_CONFIRM:
+            if settings.AUTO_EMAIL_CONFIRM:
                 requests.get(full_path)
             else:
                 sent_mail = send_mail(
