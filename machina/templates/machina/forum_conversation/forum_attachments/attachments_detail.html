@@ -10,7 +10,7 @@
         {% for attachment in post.attachments.all %}
             <div class="col-md-12 attachment">
                 <a href="{% url 'forum_conversation:attachment' pk=attachment.id %}"><i class="fa fa-file"></i>&nbsp;{{ attachment.filename }} ({{ attachment.file.size|filesizeformat }})</a>
-                <img src="{% url 'forum_conversation:attachment' pk=attachment.id %}">
+                <img style='height: 100%; width: 100%; object-fit: contain' src="{% url 'forum_conversation:attachment' pk=attachment.id %}">
                 {% if attachment.comment %}
                     <p class="text-muted"><em>{{ attachment.comment }}</em></p>
                 {% endif %}
