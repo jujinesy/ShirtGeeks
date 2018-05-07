@@ -201,6 +201,8 @@ context_processors = [
 
     # Machina
     'machina.core.context_processors.metadata',
+
+    # Custom
 ]
 
 loaders = [

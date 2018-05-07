@@ -36,13 +36,13 @@ class Profile(models.Model):
     def __str__(self):
         return self.user.username
 
-    def send_activation_email(self):
+    def send_activation_email(self, domain):
         if not self.activated:
             self.activation_key = code_generator()# 'somekey' #gen key
             self.save()
             #path_ = reverse()
             path_ = reverse('activate', kwargs={"code": self.activation_key})
-            full_path = settings.HOSTS_NAME + path_
+            full_path = domain + path_
             subject = 'Activate Account'
             from_email = settings.DEFAULT_FROM_EMAIL
             message = f'Activate your account here: {full_path}'

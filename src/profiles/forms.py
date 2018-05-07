@@ -39,7 +39,7 @@ class RegisterForm(forms.ModelForm):
 
         if commit:
             user.save()
-            user.profile.send_activation_email()
+            user.profile.send_activation_email(self.data.get('domain'))
             # create a new user hash for activating email.
         return user
 

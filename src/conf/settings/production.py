@@ -3,7 +3,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-HOSTS_NAME = ''
 ALLOWED_HOSTS = ['*']
 GOOGLE_ANALYTICS = 'UA-116547483-1'
 GOOGLE_ADSENSE = ' '

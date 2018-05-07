@@ -28,6 +28,7 @@
             <h3>{% trans "Create an account" context "Signup form title" %}</h3>
             {% csrf_token %}
             {% bootstrap_form form %}
+            <input type="hidden" name="domain" value="{{ request.META.HTTP_HOST }}"/>
             {% if REDIRECT_FIELD_VALUE %}
               <input type="hidden" name="{{ REDIRECT_FIELD_NAME }}" value="{{ REDIRECT_FIELD_VALUE }}"/>
             {% endif %}
