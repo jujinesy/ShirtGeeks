@@ -24,7 +24,7 @@ def do_assign(parser, token):
 
 @register.assignment_tag
 def do_image_filter(arg):
-    if os.path.splitext(arg)[1] in ('.jpg', '.jpge', '.png'):
+    if os.path.splitext(arg)[1] in ('.jpg', '.jpeg', '.png'):
         return True
     return  False
 
