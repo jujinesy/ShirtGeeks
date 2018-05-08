@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5d1630cc-ae4d-40e5-817c-d6a8876a7597" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/db.sqlite3" afterPath="$PROJECT_DIR$/src/db.sqlite3" />
-      <change beforePath="$PROJECT_DIR$/src/templatetags/custom_tags.py" afterPath="$PROJECT_DIR$/src/templatetags/custom_tags.py" />
+      <change beforePath="$PROJECT_DIR$/src/requirements.txt" afterPath="$PROJECT_DIR$/src/requirements.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -102,7 +101,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom_tags.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="custom_tags.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templatetags/custom_tags.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
@@ -110,6 +109,16 @@
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -196,7 +205,6 @@
         <option value="$PROJECT_DIR$/src/templates/base.html" />
         <option value="$PROJECT_DIR$/src/templates/home.html" />
         <option value="$PROJECT_DIR$/machina/templates/machina/partials/breadcrumb.html" />
-        <option value="$PROJECT_DIR$/src/requirements.txt" />
         <option value="$PROJECT_DIR$/machina/apps/forum_conversation/views.py" />
         <option value="$PROJECT_DIR$/machina/templates/machina/forum_conversation/forum_attachments/attachments_detail.html" />
         <option value="$PROJECT_DIR$/src/templates/registration/login.html" />
@@ -209,6 +217,7 @@
         <option value="$PROJECT_DIR$/src/profiles/models.py" />
         <option value="$PROJECT_DIR$/runfile/uwsgi.ini" />
         <option value="$PROJECT_DIR$/src/templatetags/custom_tags.py" />
+        <option value="$PROJECT_DIR$/src/requirements.txt" />
       </list>
     </option>
   </component>
@@ -609,7 +618,14 @@
       <option name="project" value="LOCAL" />
       <updated>1525759600406</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary=".">
+      <created>1525760965139</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1525760965139</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TodoView">
@@ -765,13 +781,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://table:/32b522f9/60a7c875-1421-4cf0-b08e-a74cdacf55d4/main.auth_permission">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/32b522f9/60a7c875-1421-4cf0-b08e-a74cdacf55d4/main.auth_group">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1165,6 +1174,14 @@
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
