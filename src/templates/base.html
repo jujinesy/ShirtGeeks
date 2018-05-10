@@ -9,50 +9,57 @@
 <html lang="{{ LANGUAGE_CODE }}" class="no-js" data-shipping-options-url="" data-cart-summary-url="/a">
 {#<html lang="{{ LANGUAGE_CODE }}" class="no-js" data-shipping-options-url="{% url 'cart:shipping-options' %}" data-cart-summary-url="{% url 'cart:cart-summary' %}">#}
 <head>
-  <title>{% block title %}{{ site.name }}{% endblock %}</title>
-  {% block meta %}
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Saleor">
-    <meta name="theme-color" content="#333333">
-    <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="{{ site.name }}">
-    <meta name="og:type" content="website">
-    {% get_available_languages as LANGUAGES %}
-    {% for lang_code, language_name in LANGUAGES %}
-      <link rel="alternate" hreflang="{{ lang_code }}" href="{% translate_url url=request.path lang_code=lang_code %}" />
-    {% endfor %}
-  {% endblock meta %}
+    <title>{% block title %}{{ site.name }}{% endblock %}</title>
+    {% block meta %}
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="Saleor">
+        <meta name="theme-color" content="#333333">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="{{ site.name }}">
+        <meta name="og:type" content="website">
+        {% get_available_languages as LANGUAGES %}
+        {% for lang_code, language_name in LANGUAGES %}
+            <link rel="alternate" hreflang="{{ lang_code }}" href="{% translate_url url=request.path lang_code=lang_code %}" />
+        {% endfor %}
+    {% endblock meta %}
 
-  {% include 'favicon.html' %}
-  {% render_bundle 'storefront' 'css' attrs='async' %}
+    {% include 'favicon.html' %}
+    {% render_bundle 'storefront' 'css' attrs='async' %}
 
-  {% block stylesheet %}{% endblock stylesheet %}
+    {% block stylesheet %}{% endblock stylesheet %}
 
-  {% block meta_tags %}
-    <meta property="og:title" content="{{ site.name }}">
-    <meta property="og:url" content="{{ request.build_absolute_uri }}">
-    <meta property="og:image" content="{% static "images/block1.jpg" %}">
-  {% endblock meta_tags %}
+    {% block meta_tags %}
+        <meta property="og:title" content="{{ site.name }}">
+        <meta property="og:url" content="{{ request.build_absolute_uri }}">
+        <meta property="og:image" content="{% static "images/block1.jpg" %}">
+    {% endblock meta_tags %}
 
-{#  <link rel="manifest" href="{% url "manifest" %}" />#}
+    {#  <link rel="manifest" href="{% url "manifest" %}" />#}
 
-  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-  <!--[if lt IE 9]>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
     <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
 
 
 
-{#<title>{% block head_title %}Shirt Geeks{% endblock head_title %}</title>#}
-{#{% include 'snippets/css.html' %}#}
+    {#<title>{% block head_title %}Shirt Geeks{% endblock head_title %}</title>#}
+    {#{% include 'snippets/css.html' %}#}
+    {% block css %}
+    {% endblock css %}
+
+    {% block extra_css %}
+    {% endblock extra_css %}
 </head>
 
 
 <body>
+{% block js %}
+{% endblock js %}
 {% block header %}
   <header class="navbar" role="navigation">
     <div class="navbar__login container-fluid {% if user.is_impersonate %} bg-warning{% endif %}">
@@ -280,6 +287,8 @@
   <script type="text/javascript" src="{% url 'javascript-catalog' %}"></script>
   {% render_bundle 'storefront' 'js' %}
 {% endblock footer_scripts %}
+{% block extra_js %}
+{% endblock extra_js %}
 {#</body>#}
 {#</html>#}
 
