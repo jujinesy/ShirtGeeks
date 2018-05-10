@@ -9,23 +9,23 @@
 {% block sub_title %}{{ forum.name }}{% endblock sub_title %}
 
 {% block content %}
-<div class="row">
-  <div class="col-xs-12">
-    <h1>{{ forum.name }}</h1>
-  </div>
-</div>
-{% if sub_forums %}
-<div class="row">
-  <div class="forumlist-top-controls col-xs-12">
-    {% if request.user.is_authenticated %}
-    <div class="pull-right">
-      <a href="{% url 'forum_tracking:mark_subforums_read' forum.pk %}" class="btn btn-link"><i class="fa fa-check-circle-o">&nbsp;</i>{% trans "Mark subforums read" %}</a>
-    </div>
-    {% endif %}
-  </div>
-</div>
-{% forum_list sub_forums %}
-{% endif %}
+{#<div class="row">#}
+{#  <div class="col-xs-12">#}
+{#    <h1>{{ forum.name }}</h1>#}
+{#  </div>#}
+{#</div>#}
+{#{% if sub_forums %}#}
+{#<div class="row">#}
+{#  <div class="forumlist-top-controls col-xs-12">#}
+{#    {% if request.user.is_authenticated %}#}
+{#    <div class="pull-right">#}
+{#      <a href="{% url 'forum_tracking:mark_subforums_read' forum.pk %}" class="btn btn-link"><i class="fa fa-check-circle-o">&nbsp;</i>{% trans "Mark subforums read" %}</a>#}
+{#    </div>#}
+{#    {% endif %}#}
+{#  </div>#}
+{#</div>#}
+{#{% forum_list sub_forums %}#}
+{#{% endif %}#}
 {% if forum.is_forum %}
 <div class="row">
   <div class="col-xs-6 col-md-4 forum-actions-block">

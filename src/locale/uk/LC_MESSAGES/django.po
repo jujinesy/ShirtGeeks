@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-06 18:16-0500\n"
+"POT-Creation-Date: 2018-05-09 02:05-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Николай Инкогнито <mmmsvit@gmail.com>, 2018\n"
 "Language-Team: Ukrainian (https://www.transifex.com/mirumee/teams/34782/"
@@ -20,94 +20,94 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: conf/settings/base.py:271
+#: conf/settings/base.py:273
 #, fuzzy
 #| msgid "Variant"
 msgid "Bulgarian"
 msgstr "Варіант"
 
-#: conf/settings/base.py:272
+#: conf/settings/base.py:274
 msgid "German"
 msgstr ""
 
-#: conf/settings/base.py:273
+#: conf/settings/base.py:275
 msgid "English"
 msgstr ""
 
-#: conf/settings/base.py:274
+#: conf/settings/base.py:276
 msgid "Spanish"
 msgstr ""
 
-#: conf/settings/base.py:275
+#: conf/settings/base.py:277
 msgid "Persian (Iran)"
 msgstr ""
 
-#: conf/settings/base.py:276
+#: conf/settings/base.py:278
 msgid "French"
 msgstr ""
 
-#: conf/settings/base.py:277
+#: conf/settings/base.py:279
 #, fuzzy
 #| msgid "Variant"
 msgid "Hungarian"
 msgstr "Варіант"
 
-#: conf/settings/base.py:278
+#: conf/settings/base.py:280
 msgid "Italian"
 msgstr ""
 
-#: conf/settings/base.py:279
+#: conf/settings/base.py:281
 msgid "Japanese"
 msgstr ""
 
-#: conf/settings/base.py:280
+#: conf/settings/base.py:282
 msgid "Korean"
 msgstr ""
 
-#: conf/settings/base.py:281
+#: conf/settings/base.py:283
 msgid "Norwegian"
 msgstr ""
 
-#: conf/settings/base.py:282
+#: conf/settings/base.py:284
 msgid "Dutch"
 msgstr ""
 
-#: conf/settings/base.py:283
+#: conf/settings/base.py:285
 #, fuzzy
 #| msgctxt "Page availability status"
 #| msgid "Published"
 msgid "Polish"
 msgstr "Опубліковано"
 
-#: conf/settings/base.py:284
+#: conf/settings/base.py:286
 msgid "Portuguese (Brazil)"
 msgstr ""
 
-#: conf/settings/base.py:285
+#: conf/settings/base.py:287
 msgid "Romanian"
 msgstr ""
 
-#: conf/settings/base.py:286
+#: conf/settings/base.py:288
 msgid "Russian"
 msgstr ""
 
-#: conf/settings/base.py:287
+#: conf/settings/base.py:289
 msgid "Slovak"
 msgstr ""
 
-#: conf/settings/base.py:288
+#: conf/settings/base.py:290
 msgid "Turkish"
 msgstr ""
 
-#: conf/settings/base.py:289
+#: conf/settings/base.py:291
 msgid "Ukrainian"
 msgstr ""
 
-#: conf/settings/base.py:290
+#: conf/settings/base.py:292
 msgid "Vietnamese"
 msgstr ""
 
-#: conf/settings/base.py:291
+#: conf/settings/base.py:293
 msgid "Chinese"
 msgstr ""
 
@@ -455,7 +455,7 @@ msgctxt "Signup form title"
 msgid "Create an account"
 msgstr "Створити обліковий запис"
 
-#: templates/account/signup.html:36
+#: templates/account/signup.html:37
 msgctxt "Signup form primary action"
 msgid "Create an account"
 msgstr "Створити обліковий запис"
@@ -504,22 +504,22 @@ msgctxt "Homepage title"
 msgid "from the Northpole"
 msgstr "з Північого полюсу"
 
-#: templates/home.html:15 templates/home.html:30 templates/home.html:42
+#: templates/home.html:16 templates/home.html:31 templates/home.html:43
 msgctxt "Homepage action"
 msgid "Shop now"
 msgstr "Купуй зараз"
 
-#: templates/home.html:29
+#: templates/home.html:30
 msgctxt "Homepage title"
 msgid "Size &amp; Colours"
 msgstr "Позміри і Кольори"
 
-#: templates/home.html:41
+#: templates/home.html:42
 msgctxt "Homepage title"
 msgid "Digital Downloads"
 msgstr "Цифрові завантаження"
 
-#: templates/home.html:50
+#: templates/home.html:51
 msgctxt "Homepage title"
 msgid "Featured products"
 msgstr "Рекламовані товари"
