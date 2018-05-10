@@ -3,29 +3,29 @@ upstream django {
 }
 
 server {
-    listen 80;
-    server_name 18.221.254.166;
+	listen 80;
+	server_name 10.211.55.7;
 
-    location = /favicon.ico { access_log off; log_not_found off; }
+	location = /favicon.ico { access_log off; log_not_found off; }
 
-    #charset	utf-8;
+	#charset	utf-8;
 
-    # max upload size
-    client_max_body_size 75M;   # adjust to taste
+	# max upload size
+	client_max_body_size 75M;   # adjust to taste
 
-    # Django media
-    location /media  {
-        alias /home/ubuntu/ShirtGeeks/src/Media;
-    }
+	# Django media
+	location /media  {
+		alias /home/ubuntu/ShirtGeeks/src/Media;
+	}
 
-    location /static {
-        alias /home/ubuntu/ShirtGeeks/src/Static/Static_Server;
-    }
+	location /static {
+		alias /home/ubuntu/ShirtGeeks/src/Static/Static_Server;
+	}
 
-    location / {
-        include		/etc/nginx/uwsgi_params;
-        uwsgi_pass	django;
-    }
+	location / {
+		include		/etc/nginx/uwsgi_params;
+		uwsgi_pass	django;
+	}
 
 	error_page 500 502 503 504 /custom_50x.html;
 	location = /custom_50x.html {
