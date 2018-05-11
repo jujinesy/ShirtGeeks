@@ -1,5 +1,6 @@
 import sys
 print (sys.path)
+
 from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls import url, include
@@ -13,6 +14,7 @@ from menus.views import HomeView, AllUserRecentItemListView
 from profiles.views import ProfileFollowToggle, RegisterView, activate_user_view
 
 from machina.app import board
+handler404 = 'conf.core.views.handle_404'
 
 non_translatable_urlpatterns = [
     url(r'^jesses/', admin.site.urls),
