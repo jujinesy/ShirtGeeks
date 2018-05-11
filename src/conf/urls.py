@@ -1,3 +1,4 @@
+import django
 import sys
 print (sys.path)
 
@@ -19,11 +20,14 @@ handler404 = 'conf.core.views.handle_404'
 non_translatable_urlpatterns = [
     url(r'^jesses/', admin.site.urls),
     url(r'^i18n/$', set_language, name='set_language'),
-    # DEBUG FALSE에서 정적파일 쓰고싶으면 python manage.py runserver --insecure
-# 또는 아래 처럼
 
-    # url(r'^static/(?P<path>.*)$', django.views.static.serve, {'document_root':settings.STATIC_ROOT}),
     ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+non_translatable_urlpatterns_DEBUG = [
+    # DEBUG FALSE에서 정적파일 쓰고싶으면 python manage.py runserver --insecure
+    # 또는 아래 처럼
+    url(r'^static/(?P<path>.*)$', django.views.static.serve, {'document_root':settings.STATIC_ROOT}),
+]
 
 translatable_urlpatterns = [
     url(r'^jsi18n/$', JavaScriptCatalog.as_view(), name='javascript-catalog'),
@@ -45,9 +49,12 @@ translatable_urlpatterns = [
     url(r'^forum/', include(board.urls)),
     ]
 
-urlpatterns = non_translatable_urlpatterns + i18n_patterns(
+if settings.DEBUG == False and settings.LOCAL == True:
+    urlpatterns = non_translatable_urlpatterns + non_translatable_urlpatterns_DEBUG + i18n_patterns(
     *translatable_urlpatterns)
-
+else:
+    urlpatterns = non_translatable_urlpatterns + i18n_patterns(
+        *translatable_urlpatterns)
 # if settings.DEBUG:
 #     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 #     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
