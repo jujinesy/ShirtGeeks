@@ -1,24 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d1630cc-ae4d-40e5-817c-d6a8876a7597" name="Default" comment=".">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/conf/account/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/conf/account/admin.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/conf/account/apps.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/conf/account/forms.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/conf/account/migrations/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/conf/account/models.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/conf/account/tests.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/conf/account/urls.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/conf/account/validators.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/conf/account/views.py" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="5d1630cc-ae4d-40e5-817c-d6a8876a7597" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/conf/settings/base.py" afterPath="$PROJECT_DIR$/src/conf/settings/base.py" />
-      <change beforePath="$PROJECT_DIR$/src/conf/urls.py" afterPath="$PROJECT_DIR$/src/conf/urls.py" />
       <change beforePath="$PROJECT_DIR$/src/db.sqlite3" afterPath="$PROJECT_DIR$/src/db.sqlite3" />
-      <change beforePath="$PROJECT_DIR$/src/templates/account/details.html" afterPath="$PROJECT_DIR$/src/templates/account/details.html" />
-      <change beforePath="$PROJECT_DIR$/src/templates/base.html" afterPath="$PROJECT_DIR$/src/templates/base.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -226,19 +211,6 @@
               <item name="ShirtGeeks" type="b2602c69:ProjectViewProjectNode" />
               <item name="ShirtGeeks" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ShirtGeeks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ShirtGeeks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ShirtGeeks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ShirtGeeks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Static" type="462c0819:PsiDirectoryNode" />
-              <item name="Static_Local" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -635,7 +607,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526118401923</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary=".">
+      <created>1526209747897</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1526209747897</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TodoView">
