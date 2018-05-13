@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-10 04:29-0500\n"
+"POT-Creation-Date: 2018-05-13 06:15-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: july metodiev <julymetodiev@gmail.com>, 2018\n"
 "Language-Team: Bulgarian (Bulgaria) (https://www.transifex.com/mirumee/"
@@ -18,6 +18,41 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: conf/account/forms.py:62
+msgctxt "Form field"
+msgid "Email"
+msgstr "E-поща"
+
+#: conf/account/forms.py:79
+msgctxt "Registration error"
+msgid "This email has already been registered."
+msgstr ""
+
+#: conf/account/forms.py:86
+#, fuzzy
+#| msgctxt "Form field"
+#| msgid "Email"
+msgctxt "Email"
+msgid "Email"
+msgstr "E-поща"
+
+#: conf/account/forms.py:88
+#, fuzzy
+#| msgctxt "Password reset page title"
+#| msgid "Password reset"
+msgctxt "Password"
+msgid "Password"
+msgstr "Рестартиране на паролата"
+
+#: conf/account/validators.py:11
+msgid "The phone number entered is not valid."
+msgstr "Въведеният телефонен номер не е валиден."
+
+#: conf/account/views.py:99
+msgctxt "Storefront message"
+msgid "Password successfully changed."
+msgstr "Паролата е успешно променена"
 
 #: conf/settings/base.py:273
 #, fuzzy
@@ -182,7 +217,7 @@ msgid "Your profile"
 msgstr "Твоят профил"
 
 #: templates/account/details.html:19 templates/account/password_change.html:8
-#: templates/base.html:77
+#: templates/base.html:84
 msgctxt "Main navigation item"
 msgid "Your account"
 msgstr "Вашият акаунт"
@@ -191,65 +226,15 @@ msgstr "Вашият акаунт"
 msgid "My account"
 msgstr "Моят акаунт"
 
-#: templates/account/details.html:30
-msgctxt "User profile tab"
-msgid "Recent Orders"
-msgstr "Последни поръчки"
-
 #: templates/account/details.html:36
 msgctxt "User profile tab"
 msgid "Change password"
 msgstr "Смяна на парола"
 
-#: templates/account/details.html:42
-msgctxt "User profile tab"
-msgid "Addresses book"
-msgstr "Адресна книга"
-
-#: templates/account/details.html:54
-msgctxt "Recent orders column title"
-msgid "Order"
-msgstr "Поръчка"
-
-#: templates/account/details.html:57
-msgctxt "Recent orders column title"
-msgid "Date"
-msgstr "Дата"
-
-#: templates/account/details.html:60
-msgctxt "Recent orders column title"
-msgid "Summary"
-msgstr "Резюме"
-
-#: templates/account/details.html:63
-msgctxt "Recent orders column title"
-msgid "Status"
-msgstr "Статус"
-
-#: templates/account/details.html:85
-msgctxt "Recent orders link text"
-msgid "Details"
-msgstr "Детайли"
-
-#: templates/account/details.html:100
-msgctxt "No recent orders text"
-msgid "There are not any completed orders yet."
-msgstr "Все още няма завършени поръчки."
-
 #: templates/account/details.html:111
 msgctxt "User profile action"
 msgid "Change password"
 msgstr "Смяна на парола"
-
-#: templates/account/details.html:126
-msgctxt "User address action"
-msgid "Edit"
-msgstr "Редакция"
-
-#: templates/account/details.html:142
-msgctxt "No addresses text"
-msgid "You will see new addresses here after first successful checkout."
-msgstr "Тук ще видите новите адреси след първото успешно плащане."
 
 #: templates/account/login.html:5 templates/registration/login.html:5
 msgctxt "Login page title"
@@ -456,37 +441,37 @@ msgctxt "Signup form primary action"
 msgid "Create an account"
 msgstr "Създаване на профил"
 
-#: templates/base.html:71
+#: templates/base.html:78
 msgctxt "Main navigation item"
 msgid "Dashboard"
 msgstr "Табло"
 
-#: templates/base.html:83
+#: templates/base.html:90
 msgctxt "Main navigation item"
 msgid "Stop impersonating"
 msgstr "Спрете представянето"
 
-#: templates/base.html:89 templates/base.html:232
+#: templates/base.html:96 templates/base.html:239
 msgctxt "Main navigation item"
 msgid "Log out"
 msgstr "Излизане"
 
-#: templates/base.html:95 templates/base.html:238
+#: templates/base.html:102 templates/base.html:245
 msgctxt "Main navigation item"
 msgid "Register"
 msgstr "Регистрация"
 
-#: templates/base.html:99 templates/base.html:243
+#: templates/base.html:106 templates/base.html:250
 msgctxt "Main navigation item"
 msgid "Log in"
 msgstr "Вход"
 
-#: templates/base.html:114
+#: templates/base.html:121
 msgctxt "Hamburger button text"
 msgid "menu"
 msgstr "меню"
 
-#: templates/base.html:131
+#: templates/base.html:138
 msgid "Search for product"
 msgstr "Търсене за продукт"
 
@@ -520,9 +505,45 @@ msgctxt "Homepage title"
 msgid "Featured products"
 msgstr "Последни продукти"
 
-#~ msgctxt "Form field"
-#~ msgid "Email"
-#~ msgstr "E-поща"
+#~ msgctxt "User profile tab"
+#~ msgid "Recent Orders"
+#~ msgstr "Последни поръчки"
+
+#~ msgctxt "User profile tab"
+#~ msgid "Addresses book"
+#~ msgstr "Адресна книга"
+
+#~ msgctxt "Recent orders column title"
+#~ msgid "Order"
+#~ msgstr "Поръчка"
+
+#~ msgctxt "Recent orders column title"
+#~ msgid "Date"
+#~ msgstr "Дата"
+
+#~ msgctxt "Recent orders column title"
+#~ msgid "Summary"
+#~ msgstr "Резюме"
+
+#~ msgctxt "Recent orders column title"
+#~ msgid "Status"
+#~ msgstr "Статус"
+
+#~ msgctxt "Recent orders link text"
+#~ msgid "Details"
+#~ msgstr "Детайли"
+
+#~ msgctxt "No recent orders text"
+#~ msgid "There are not any completed orders yet."
+#~ msgstr "Все още няма завършени поръчки."
+
+#~ msgctxt "User address action"
+#~ msgid "Edit"
+#~ msgstr "Редакция"
+
+#~ msgctxt "No addresses text"
+#~ msgid "You will see new addresses here after first successful checkout."
+#~ msgstr "Тук ще видите новите адреси след първото успешно плащане."
 
 #~ msgctxt "Address field"
 #~ msgid "Area"
@@ -648,18 +669,11 @@ msgstr "Последни продукти"
 #~ "%(street_address_1)s\n"
 #~ "%(street_address_2)s"
 
-#~ msgid "The phone number entered is not valid."
-#~ msgstr "Въведеният телефонен номер не е валиден."
-
 #~ msgid "You have been successfully logged out."
 #~ msgstr "Успешно излязохте"
 
 #~ msgid "User has been created"
 #~ msgstr "Потребителят е създаден"
-
-#~ msgctxt "Storefront message"
-#~ msgid "Password successfully changed."
-#~ msgstr "Паролата е успешно променена"
 
 #~ msgctxt "Storefront message"
 #~ msgid "Address successfully updated."

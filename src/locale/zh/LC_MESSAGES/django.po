@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-10 04:29-0500\n"
+"POT-Creation-Date: 2018-05-13 06:15-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: ax003d <ax003d@gmail.com>, 2017\n"
 "Language-Team: Chinese (https://www.transifex.com/mirumee/teams/34782/zh/)\n"
@@ -17,6 +17,41 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: conf/account/forms.py:62
+msgctxt "Form field"
+msgid "Email"
+msgstr "电子邮件"
+
+#: conf/account/forms.py:79
+msgctxt "Registration error"
+msgid "This email has already been registered."
+msgstr ""
+
+#: conf/account/forms.py:86
+#, fuzzy
+#| msgctxt "Form field"
+#| msgid "Email"
+msgctxt "Email"
+msgid "Email"
+msgstr "电子邮件"
+
+#: conf/account/forms.py:88
+#, fuzzy
+#| msgctxt "Password reset page title"
+#| msgid "Password reset"
+msgctxt "Password"
+msgid "Password"
+msgstr "重置密码"
+
+#: conf/account/validators.py:11
+msgid "The phone number entered is not valid."
+msgstr ""
+
+#: conf/account/views.py:99
+msgctxt "Storefront message"
+msgid "Password successfully changed."
+msgstr "成功修改密码"
 
 #: conf/settings/base.py:273
 #, fuzzy
@@ -181,7 +216,7 @@ msgid "Your profile"
 msgstr "您的简介"
 
 #: templates/account/details.html:19 templates/account/password_change.html:8
-#: templates/base.html:77
+#: templates/base.html:84
 msgctxt "Main navigation item"
 msgid "Your account"
 msgstr "您的账号"
@@ -190,65 +225,15 @@ msgstr "您的账号"
 msgid "My account"
 msgstr "我的账号"
 
-#: templates/account/details.html:30
-msgctxt "User profile tab"
-msgid "Recent Orders"
-msgstr "最近订单"
-
 #: templates/account/details.html:36
 msgctxt "User profile tab"
 msgid "Change password"
 msgstr "修改密码"
 
-#: templates/account/details.html:42
-msgctxt "User profile tab"
-msgid "Addresses book"
-msgstr "地址薄"
-
-#: templates/account/details.html:54
-msgctxt "Recent orders column title"
-msgid "Order"
-msgstr "订单"
-
-#: templates/account/details.html:57
-msgctxt "Recent orders column title"
-msgid "Date"
-msgstr "日期"
-
-#: templates/account/details.html:60
-msgctxt "Recent orders column title"
-msgid "Summary"
-msgstr "摘要"
-
-#: templates/account/details.html:63
-msgctxt "Recent orders column title"
-msgid "Status"
-msgstr "状态"
-
-#: templates/account/details.html:85
-msgctxt "Recent orders link text"
-msgid "Details"
-msgstr "详情"
-
-#: templates/account/details.html:100
-msgctxt "No recent orders text"
-msgid "There are not any completed orders yet."
-msgstr "还没有完成的订单"
-
 #: templates/account/details.html:111
 msgctxt "User profile action"
 msgid "Change password"
 msgstr "修改密码"
-
-#: templates/account/details.html:126
-msgctxt "User address action"
-msgid "Edit"
-msgstr "编辑"
-
-#: templates/account/details.html:142
-msgctxt "No addresses text"
-msgid "You will see new addresses here after first successful checkout."
-msgstr ""
 
 #: templates/account/login.html:5 templates/registration/login.html:5
 msgctxt "Login page title"
@@ -446,37 +431,37 @@ msgctxt "Signup form primary action"
 msgid "Create an account"
 msgstr "创建账号"
 
-#: templates/base.html:71
+#: templates/base.html:78
 msgctxt "Main navigation item"
 msgid "Dashboard"
 msgstr "后台"
 
-#: templates/base.html:83
+#: templates/base.html:90
 msgctxt "Main navigation item"
 msgid "Stop impersonating"
 msgstr ""
 
-#: templates/base.html:89 templates/base.html:232
+#: templates/base.html:96 templates/base.html:239
 msgctxt "Main navigation item"
 msgid "Log out"
 msgstr "登出"
 
-#: templates/base.html:95 templates/base.html:238
+#: templates/base.html:102 templates/base.html:245
 msgctxt "Main navigation item"
 msgid "Register"
 msgstr "注册"
 
-#: templates/base.html:99 templates/base.html:243
+#: templates/base.html:106 templates/base.html:250
 msgctxt "Main navigation item"
 msgid "Log in"
 msgstr "登录"
 
-#: templates/base.html:114
+#: templates/base.html:121
 msgctxt "Hamburger button text"
 msgid "menu"
 msgstr "菜单"
 
-#: templates/base.html:131
+#: templates/base.html:138
 msgid "Search for product"
 msgstr "搜索产品"
 
@@ -510,9 +495,41 @@ msgctxt "Homepage title"
 msgid "Featured products"
 msgstr "主打产品"
 
-#~ msgctxt "Form field"
-#~ msgid "Email"
-#~ msgstr "电子邮件"
+#~ msgctxt "User profile tab"
+#~ msgid "Recent Orders"
+#~ msgstr "最近订单"
+
+#~ msgctxt "User profile tab"
+#~ msgid "Addresses book"
+#~ msgstr "地址薄"
+
+#~ msgctxt "Recent orders column title"
+#~ msgid "Order"
+#~ msgstr "订单"
+
+#~ msgctxt "Recent orders column title"
+#~ msgid "Date"
+#~ msgstr "日期"
+
+#~ msgctxt "Recent orders column title"
+#~ msgid "Summary"
+#~ msgstr "摘要"
+
+#~ msgctxt "Recent orders column title"
+#~ msgid "Status"
+#~ msgstr "状态"
+
+#~ msgctxt "Recent orders link text"
+#~ msgid "Details"
+#~ msgstr "详情"
+
+#~ msgctxt "No recent orders text"
+#~ msgid "There are not any completed orders yet."
+#~ msgstr "还没有完成的订单"
+
+#~ msgctxt "User address action"
+#~ msgid "Edit"
+#~ msgstr "编辑"
 
 #~ msgctxt "Address field"
 #~ msgid "County"
@@ -559,10 +576,6 @@ msgstr "主打产品"
 
 #~ msgid "User has been created"
 #~ msgstr "用户已创建"
-
-#~ msgctxt "Storefront message"
-#~ msgid "Password successfully changed."
-#~ msgstr "成功修改密码"
 
 #~ msgctxt "Storefront message"
 #~ msgid "Address successfully updated."

@@ -2,7 +2,7 @@ from django import forms
 from django.conf import settings
 from django.contrib.auth import forms as django_forms, update_session_auth_hash
 from django.utils.translation import pgettext, pgettext_lazy
-from phonenumbers.phonenumberutil import country_code_for_region
+# from phonenumbers.phonenumberutil import country_code_for_region
 
 # from . import emails
 # from ..account.models import User

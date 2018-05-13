@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-10 04:29-0500\n"
+"POT-Creation-Date: 2018-05-13 06:15-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Николай Инкогнито <mmmsvit@gmail.com>, 2018\n"
 "Language-Team: Ukrainian (https://www.transifex.com/mirumee/teams/34782/"
@@ -19,6 +19,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: conf/account/forms.py:62
+msgctxt "Form field"
+msgid "Email"
+msgstr "Email"
+
+#: conf/account/forms.py:79
+msgctxt "Registration error"
+msgid "This email has already been registered."
+msgstr ""
+
+#: conf/account/forms.py:86
+msgctxt "Email"
+msgid "Email"
+msgstr "Email"
+
+#: conf/account/forms.py:88
+msgctxt "Password"
+msgid "Password"
+msgstr "Пароль"
+
+#: conf/account/validators.py:11
+msgid "The phone number entered is not valid."
+msgstr "Некоректно ведений номер телефону."
+
+#: conf/account/views.py:99
+msgctxt "Storefront message"
+msgid "Password successfully changed."
+msgstr "Пароль змінено успішно."
 
 #: conf/settings/base.py:273
 #, fuzzy
@@ -186,7 +215,7 @@ msgid "Your profile"
 msgstr "Ваш профіль "
 
 #: templates/account/details.html:19 templates/account/password_change.html:8
-#: templates/base.html:77
+#: templates/base.html:84
 msgctxt "Main navigation item"
 msgid "Your account"
 msgstr "Ваш обліковий запис"
@@ -195,65 +224,15 @@ msgstr "Ваш обліковий запис"
 msgid "My account"
 msgstr "Мій обліковий запис"
 
-#: templates/account/details.html:30
-msgctxt "User profile tab"
-msgid "Recent Orders"
-msgstr "Нещодавні замовлення"
-
 #: templates/account/details.html:36
 msgctxt "User profile tab"
 msgid "Change password"
 msgstr "Змінити пароль"
 
-#: templates/account/details.html:42
-msgctxt "User profile tab"
-msgid "Addresses book"
-msgstr "Адресна книга"
-
-#: templates/account/details.html:54
-msgctxt "Recent orders column title"
-msgid "Order"
-msgstr "Замовлення"
-
-#: templates/account/details.html:57
-msgctxt "Recent orders column title"
-msgid "Date"
-msgstr "Дата"
-
-#: templates/account/details.html:60
-msgctxt "Recent orders column title"
-msgid "Summary"
-msgstr "Підсумок"
-
-#: templates/account/details.html:63
-msgctxt "Recent orders column title"
-msgid "Status"
-msgstr "Статус"
-
-#: templates/account/details.html:85
-msgctxt "Recent orders link text"
-msgid "Details"
-msgstr "Деталі"
-
-#: templates/account/details.html:100
-msgctxt "No recent orders text"
-msgid "There are not any completed orders yet."
-msgstr "Немає виконаних замовлень."
-
 #: templates/account/details.html:111
 msgctxt "User profile action"
 msgid "Change password"
 msgstr "Змінити пароль"
-
-#: templates/account/details.html:126
-msgctxt "User address action"
-msgid "Edit"
-msgstr "Редагувати"
-
-#: templates/account/details.html:142
-msgctxt "No addresses text"
-msgid "You will see new addresses here after first successful checkout."
-msgstr "Тут відображатиметься адреса після першого успішного замовлення."
 
 #: templates/account/login.html:5 templates/registration/login.html:5
 msgctxt "Login page title"
@@ -460,37 +439,37 @@ msgctxt "Signup form primary action"
 msgid "Create an account"
 msgstr "Створити обліковий запис"
 
-#: templates/base.html:71
+#: templates/base.html:78
 msgctxt "Main navigation item"
 msgid "Dashboard"
 msgstr "Центр керування "
 
-#: templates/base.html:83
+#: templates/base.html:90
 msgctxt "Main navigation item"
 msgid "Stop impersonating"
 msgstr ""
 
-#: templates/base.html:89 templates/base.html:232
+#: templates/base.html:96 templates/base.html:239
 msgctxt "Main navigation item"
 msgid "Log out"
 msgstr "Вийти"
 
-#: templates/base.html:95 templates/base.html:238
+#: templates/base.html:102 templates/base.html:245
 msgctxt "Main navigation item"
 msgid "Register"
 msgstr "Зареєструватися"
 
-#: templates/base.html:99 templates/base.html:243
+#: templates/base.html:106 templates/base.html:250
 msgctxt "Main navigation item"
 msgid "Log in"
 msgstr "Вхід "
 
-#: templates/base.html:114
+#: templates/base.html:121
 msgctxt "Hamburger button text"
 msgid "menu"
 msgstr "меню"
 
-#: templates/base.html:131
+#: templates/base.html:138
 msgid "Search for product"
 msgstr "Пошук продукту"
 
@@ -524,17 +503,45 @@ msgctxt "Homepage title"
 msgid "Featured products"
 msgstr "Рекламовані товари"
 
-#~ msgctxt "Form field"
-#~ msgid "Email"
-#~ msgstr "Email"
+#~ msgctxt "User profile tab"
+#~ msgid "Recent Orders"
+#~ msgstr "Нещодавні замовлення"
 
-#~ msgctxt "Email"
-#~ msgid "Email"
-#~ msgstr "Email"
+#~ msgctxt "User profile tab"
+#~ msgid "Addresses book"
+#~ msgstr "Адресна книга"
 
-#~ msgctxt "Password"
-#~ msgid "Password"
-#~ msgstr "Пароль"
+#~ msgctxt "Recent orders column title"
+#~ msgid "Order"
+#~ msgstr "Замовлення"
+
+#~ msgctxt "Recent orders column title"
+#~ msgid "Date"
+#~ msgstr "Дата"
+
+#~ msgctxt "Recent orders column title"
+#~ msgid "Summary"
+#~ msgstr "Підсумок"
+
+#~ msgctxt "Recent orders column title"
+#~ msgid "Status"
+#~ msgstr "Статус"
+
+#~ msgctxt "Recent orders link text"
+#~ msgid "Details"
+#~ msgstr "Деталі"
+
+#~ msgctxt "No recent orders text"
+#~ msgid "There are not any completed orders yet."
+#~ msgstr "Немає виконаних замовлень."
+
+#~ msgctxt "User address action"
+#~ msgid "Edit"
+#~ msgstr "Редагувати"
+
+#~ msgctxt "No addresses text"
+#~ msgid "You will see new addresses here after first successful checkout."
+#~ msgstr "Тут відображатиметься адреса після першого успішного замовлення."
 
 #~ msgctxt "Address field"
 #~ msgid "Area"
@@ -688,18 +695,11 @@ msgstr "Рекламовані товари"
 #~ "%(street_address_1)s\n"
 #~ "%(street_address_2)s"
 
-#~ msgid "The phone number entered is not valid."
-#~ msgstr "Некоректно ведений номер телефону."
-
 #~ msgid "You have been successfully logged out."
 #~ msgstr "Ви успішно вийшли."
 
 #~ msgid "User has been created"
 #~ msgstr "Користувача створено"
-
-#~ msgctxt "Storefront message"
-#~ msgid "Password successfully changed."
-#~ msgstr "Пароль змінено успішно."
 
 #~ msgctxt "Storefront message"
 #~ msgid "Address successfully updated."
