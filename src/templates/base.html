@@ -80,9 +80,9 @@
                 </li>
               {% endif %}
               <li>
-{#                <a href="{% url "account:details" %}">#}
+                <a href="{% url "account:details" %}">
                   {% trans "Your account" context "Main navigation item" %}
-{#                </a>#}
+                </a>
               </li>
               {% if user.is_impersonate %}
                 <li>

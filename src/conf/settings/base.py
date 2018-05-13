@@ -105,7 +105,7 @@ INSTALLED_APPS = [
     'django.forms',
 
     # Local apps
-    # 'saleor.account',
+    'conf.account',
     # 'saleor.discount',
     # 'saleor.product',
     # 'saleor.cart',
@@ -373,3 +373,7 @@ MACHINA_DEFAULT_AUTHENTICATED_USER_FORUM_PERMISSIONS = [
     'can_download_file',
     'can_attach_file',
 ]
+
+# AUTH_USER_MODEL = 'account.User'
+
+LOGOUT_ON_PASSWORD_CHANGE = False

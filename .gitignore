@@ -111,10 +111,11 @@ ENV/
 
 # data
 #/docs/_build/
-/src/media/
+/src/Media/
 /src/node_modules/
 #/static/
 /src/Static/Static_Local/assets/
+/src/Static/Static_Server
 webpack-bundle.json
 package-lock.json
 /src/templates/templated_email/compiled/
