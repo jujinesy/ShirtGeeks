@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-13 06:15-0500\n"
+"POT-Creation-Date: 2018-05-14 02:08-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Language-Team: Bulgarian (https://www.transifex.com/mirumee/teams/34782/"
 "bg/)\n"
@@ -203,7 +203,7 @@ msgid "Your profile"
 msgstr ""
 
 #: templates/account/details.html:19 templates/account/password_change.html:8
-#: templates/base.html:84
+#: templates/base.html:85
 msgctxt "Main navigation item"
 msgid "Your account"
 msgstr ""
@@ -416,37 +416,37 @@ msgctxt "Signup form primary action"
 msgid "Create an account"
 msgstr ""
 
-#: templates/base.html:78
+#: templates/base.html:79
 msgctxt "Main navigation item"
 msgid "Dashboard"
 msgstr ""
 
-#: templates/base.html:90
+#: templates/base.html:91
 msgctxt "Main navigation item"
 msgid "Stop impersonating"
 msgstr ""
 
-#: templates/base.html:96 templates/base.html:239
+#: templates/base.html:97 templates/base.html:240
 msgctxt "Main navigation item"
 msgid "Log out"
 msgstr ""
 
-#: templates/base.html:102 templates/base.html:245
+#: templates/base.html:103 templates/base.html:246
 msgctxt "Main navigation item"
 msgid "Register"
 msgstr ""
 
-#: templates/base.html:106 templates/base.html:250
+#: templates/base.html:107 templates/base.html:251
 msgctxt "Main navigation item"
 msgid "Log in"
 msgstr ""
 
-#: templates/base.html:121
+#: templates/base.html:122
 msgctxt "Hamburger button text"
 msgid "menu"
 msgstr ""
 
-#: templates/base.html:138
+#: templates/base.html:139
 msgid "Search for product"
 msgstr ""
 
