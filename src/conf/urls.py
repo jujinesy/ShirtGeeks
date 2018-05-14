@@ -18,6 +18,7 @@ from profiles.views import ProfileFollowToggle, RegisterView, activate_user_view
 
 from machina.app import board
 handler404 = 'conf.core.views.handle_404'
+handler403 = 'conf.core.views.handle_404'
 
 non_translatable_urlpatterns = [
     url(r'^jesses/', admin.site.urls),
