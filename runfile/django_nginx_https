@@ -6,39 +6,39 @@ upstream django {
 # Redirect all www to non-www
 #
 server {
-	server_name www.sh3ltr.org;
-	ssl_certificate /etc/letsencrypt/live/sh3ltr.org/fullchain.pem;
-	ssl_certificate_key /etc/letsencrypt/live/sh3ltr.org/privkey.pem;
+	server_name www.AAAAAAAAAAAAAAAAAAAAA.com;
+	ssl_certificate /etc/letsencrypt/live/AAAAAAAAAAAAAAAAAAAAA.com/fullchain.pem;
+	ssl_certificate_key /etc/letsencrypt/live/AAAAAAAAAAAAAAAAAAAAA.com/privkey.pem;
 	listen *:80;
 	listen *:443 ssl spdy;
 	listen [::]:80 ipv6only=on;
 	listen [::]:443 ssl spdy ipv6only=on;
 
-	return 301 https://sh3ltr.org$request_uri;
+	return 301 https://AAAAAAAAAAAAAAAAAAAAA.com$request_uri;
 }
 
 #
 # Redirect all non-encrypted to encrypted
 #
 server {
-	server_name	sh3ltr.org;
+	server_name	AAAAAAAAAAAAAAAAAAAAA.com;
 	listen	*:80;
 	listen	[::]:80;
 
-	return 301 https://sh3ltr.org$request_uri;
+	return 301 https://AAAAAAAAAAAAAAAAAAAAA.com$request_uri;
 }
 
 #
 # There we go!
 #
 server {
-	server_name sh3ltr.org;
+	server_name AAAAAAAAAAAAAAAAAAAAA.com;
 	listen *:443 ssl spdy;
 	listen [::]:443 ssl spdy;
 
 	ssl on;
-	ssl_certificate /etc/letsencrypt/live/sh3ltr.org/fullchain.pem;
-	ssl_certificate_key /etc/letsencrypt/live/sh3ltr.org/privkey.pem;
+	ssl_certificate /etc/letsencrypt/live/AAAAAAAAAAAAAAAAAAAAA.com/fullchain.pem;
+	ssl_certificate_key /etc/letsencrypt/live/AAAAAAAAAAAAAAAAAAAAA.com/privkey.pem;
 
 	location = /favicon.ico { access_log off; log_not_found off; }
 
