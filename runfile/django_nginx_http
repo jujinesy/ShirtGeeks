@@ -2,9 +2,15 @@ upstream django {
 	server unix:/home/ubuntu/ShirtGeeks/runfile/uwsgi.sock;
 }
 
+#server {
+#	server_name www.     .com;
+#	listen 80;
+#	return 301 http://shirtgeeksorder.com$request_uri;
+#}
+
 server {
-	listen 80;
 	server_name 10.211.55.7;
+	listen 80;
 
 	location = /favicon.ico { access_log off; log_not_found off; }
 
