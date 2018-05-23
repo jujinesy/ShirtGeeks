@@ -75,9 +75,9 @@
             {% if user.is_authenticated %}
               {% if user.is_staff or request.impersonator.is_staff %}
                 <li>
-{#                  <a href="{% url "dashboard:index" %}" target="_blank" rel="noopener">#}
+                  <a href="{% url "home" %}jesses" target="_blank" rel="noopener">
                     {% trans "Dashboard" context "Main navigation item" %}
-{#                  </a>#}
+                  </a>
                 </li>
               {% endif %}
               <li>

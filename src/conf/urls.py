@@ -21,7 +21,7 @@ handler404 = 'conf.core.views.handle_404'
 handler403 = 'conf.core.views.handle_404'
 
 non_translatable_urlpatterns = [
-    url(r'^jesses/', admin.site.urls),
+
     url(r'^i18n/$', set_language, name='set_language'),
 
     ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
@@ -33,6 +33,7 @@ non_translatable_urlpatterns_DEBUG = [
 ]
 
 translatable_urlpatterns = [
+    url(r'^jesses/', admin.site.urls),
     url(r'^jsi18n/$', JavaScriptCatalog.as_view(), name='javascript-catalog'),
 
     url(r'^$', HomeView.as_view(), name='home'),
