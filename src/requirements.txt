@@ -1,7 +1,7 @@
 pip==9.0.3
 -e ../
 Babel==2.5.3
-certifi==2018.1.18
+certifi==2022.12.7
 chardet==3.0.4
 dj-database-url==0.4.2
 Django==1.11.13
